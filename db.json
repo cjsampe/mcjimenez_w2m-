@@ -1,0 +1,181 @@
+{
+  "heroes": [
+    {
+      "id": "0001H",
+      "superhero": "Batman",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne",
+      "image": "https://cdn.shopify.com/s/files/1/0031/3026/1613/products/funko-pop-batman-keaton-dc-comics.jpg?v=1679685344&width=600"
+    },
+    {
+      "id": "0002H",
+      "superhero": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Kal-El",
+      "first_appearance": "Action Comics #1",
+      "characters": "Kal-El",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0003H",
+      "superhero": "Flash",
+      "publisher": "DC Comics",
+      "alter_ego": "Jay Garrick",
+      "first_appearance": "Flash Comics #1",
+      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0004H",
+      "superhero": "Green Lantern",
+      "publisher": "DC Comics",
+      "alter_ego": "Alan Scott",
+      "first_appearance": "All-American Comics #16",
+      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0005H",
+      "superhero": "Green Arrow",
+      "publisher": "DC Comics",
+      "alter_ego": "Oliver Queen",
+      "first_appearance": "More Fun Comics #73",
+      "characters": "Oliver Queen",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0006H",
+      "superhero": "Wonder Woman",
+      "publisher": "DC Comics",
+      "alter_ego": "Princess Diana",
+      "first_appearance": "All Star Comics #8",
+      "characters": "Princess Diana",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0007H",
+      "superhero": "Martian Manhunter",
+      "publisher": "DC Comics",
+      "alter_ego": "J'onn J'onzz",
+      "first_appearance": "Detective Comics #225",
+      "characters": "Martian Manhunter",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0008H",
+      "superhero": "Robin/Nightwing",
+      "publisher": "DC Comics",
+      "alter_ego": "Dick Grayson",
+      "first_appearance": "Detective Comics #38",
+      "characters": "Dick Grayson",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+    },
+    {
+      "id": "0009H",
+      "superhero": "Blue Beetle",
+      "publisher": "DC Comics",
+      "alter_ego": "Dan Garret",
+      "first_appearance": "Mystery Men Comics #1",
+      "characters": "Dan Garret, Ted Kord, Jaime Reyes"
+    },
+    {
+      "id": "0010H",
+      "superhero": "Black Canary",
+      "publisher": "DC Comics",
+      "alter_ego": "Dinah Drake",
+      "first_appearance": "Flash Comics #86",
+      "characters": "Dinah Drake, Dinah Lance"
+    },
+    {
+      "id": "0011H",
+      "superhero": "Spider Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Peter Parker",
+      "first_appearance": "Amazing Fantasy #15",
+      "characters": "Peter Parker"
+    },
+    {
+      "id": "0012H",
+      "superhero": "Captain America",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Steve Rogers",
+      "first_appearance": "Captain America Comics #1",
+      "characters": "Steve Rogers"
+    },
+    {
+      "id": "0013H",
+      "superhero": "Iron Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Tony Stark",
+      "first_appearance": "Tales of Suspense #39",
+      "characters": "Tony Stark"
+    },
+    {
+      "id": "0014H",
+      "superhero": "Thor",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Thor Odinson",
+      "first_appearance": "Journey into Myster #83",
+      "characters": "Thor Odinson"
+    },
+    {
+      "id": "0015H",
+      "superhero": "Hulk",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Bruce Banner",
+      "first_appearance": "The Incredible Hulk #1",
+      "characters": "Bruce Banner"
+    },
+    {
+      "id": "0016H",
+      "superhero": "Wolverine",
+      "publisher": "Marvel Comics",
+      "alter_ego": "James Howlett",
+      "first_appearance": "The Incredible Hulk #180",
+      "characters": "James Howlett"
+    },
+    {
+      "id": "0017H",
+      "superhero": "Daredevil",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Matthew Michael Murdock",
+      "first_appearance": "Daredevil #1",
+      "characters": "Matthew Michael Murdock"
+    },
+    {
+      "id": "0018H",
+      "superhero": "Hawkeye",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Clinton Francis Barton",
+      "first_appearance": "Tales of Suspense #57",
+      "characters": "Clinton Francis Barton"
+    },
+    {
+      "id": "0019H",
+      "superhero": "Cyclops",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Scott Summers",
+      "first_appearance": "X-Men #1",
+      "characters": "Scott Summers"
+    },
+    {
+      "id": "0020H",
+      "superhero": "Silver Surfer",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Norrin Radd",
+      "first_appearance": "The Fantastic Four #48",
+      "characters": "Norrin Radd"
+    },
+    {
+      "superhero": "Batman2",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne",
+      "image": "https://cdn.shopify.com/s/files/1/0031/3026/1613/products/funko-pop-batman-keaton-dc-comics.jpg?v=1679685344&width=600",
+      "id": "SWzQfbY"
+    }
+  ]
+}

@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './app/shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeroesModule } from './components/heroes/heroes/heroes.module';
+import { HeroeModule } from './components/heroes/heroe/heroe.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HeroesModule,
+    HeroeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
