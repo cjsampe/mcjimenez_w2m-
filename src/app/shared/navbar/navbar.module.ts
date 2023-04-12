@@ -1,25 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './navbar.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
-import { HttpClientModule } from '@angular/common/http';
-import { HeroeComponent } from './heroe.component';
-import { MatInputModule } from '@angular/material/input';
-
-
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
   declarations: [
-    HeroeComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule,
-    MatSlideToggleModule,
-    HttpClientModule,
     MatCardModule,
-    MatInputModule
+    MatSlideToggleModule,
+    MatIconModule,
+    MatToolbarModule
   ]
 })
-export class HeroeModule { }
+export class NavbarModule { }
