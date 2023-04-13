@@ -12,10 +12,10 @@ import { HeroeModule } from './heroes/views/heroe/heroe.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,7 @@ import { NavbarModule } from './shared/navbar/navbar.module';
     BrowserAnimationsModule,
     HeroesModule,
     HeroeModule,
-    NavbarModule,
+    NavbarModule
 
   ],
   providers: [],

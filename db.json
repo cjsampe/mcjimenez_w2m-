@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": "0001H",
-      "superhero": "Batman29",
+      "superhero": "Batman",
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne"
     },
@@ -123,53 +123,10 @@
       "characters": "Bruce Banner"
     },
     {
-      "id": "0016H",
-      "superhero": "Wolverine",
-      "publisher": "Marvel Comics",
-      "alter_ego": "James Howlett",
-      "first_appearance": "The Incredible Hulk #180",
-      "characters": "James Howlett"
-    },
-    {
-      "id": "0017H",
-      "superhero": "Daredevil",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Matthew Michael Murdock",
-      "first_appearance": "Daredevil #1",
-      "characters": "Matthew Michael Murdock"
-    },
-    {
-      "id": "0018H",
-      "superhero": "Hawkeye",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Clinton Francis Barton",
-      "first_appearance": "Tales of Suspense #57",
-      "characters": "Clinton Francis Barton"
-    },
-    {
-      "id": "0019H",
-      "superhero": "Cyclops",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
-    },
-    {
-      "id": "0020H",
-      "superhero": "Silver Surfer",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Norrin Radd",
-      "first_appearance": "The Fantastic Four #48",
-      "characters": "Norrin Radd"
-    },
-    {
-      "superhero": "Batman2",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne",
-      "image": "https://cdn.shopify.com/s/files/1/0031/3026/1613/products/funko-pop-batman-keaton-dc-comics.jpg?v=1679685344&width=600",
-      "id": "SWzQfbY"
+      "id": "TE2lVAP",
+      "superhero": "xzczxc",
+      "publisher": "czxczxc",
+      "alter_ego": "zxczxczxc"
     }
   ]
 }
