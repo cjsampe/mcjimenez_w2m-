@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 import { HeroesServiceService } from '../../heroes-service.service';
@@ -13,6 +13,9 @@ import { HeroeModel } from 'src/app/entity/heroe.entity';
 export class HeroesComponent implements OnInit {
 
   heroes: HeroeModel[] = [];
+
+  filterPost = '';
+  
   
   dataSource = new MatTableDataSource<HeroeModel>(this.heroes);
 
@@ -40,10 +43,13 @@ export class HeroesComponent implements OnInit {
     //   confirmButtonText: 'Borrar',
     // }).then(resp => {
       
-     // if (resp.value) {
-        this.heroes.splice(i, 1); // borrar desde la posición i, 1 posición
+      // if (resp.value) {
+        // borrar desde la posición i, 1 posición
+        this.heroes.splice(i, 1); 
     this.heroesService.deleteHeroe( heroe.id! ).subscribe();
+
   }
 }
+
 
 

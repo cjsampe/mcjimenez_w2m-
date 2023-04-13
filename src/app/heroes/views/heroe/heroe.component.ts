@@ -70,7 +70,7 @@ save(f: FormGroup){
   this.heroe = this.f.value;
 
   
-  let call: Observable<any>;
+  let call: Observable<HeroeModel>;
 
   if (this.heroe.id){
     call = this.heroesService.updateHeroe( this.heroe );
@@ -80,6 +80,7 @@ save(f: FormGroup){
   }
   
   call.subscribe ( resp =>{
+    resp = this.heroe; //opcional para que no me error
 
   //   Swal.fire('Tu héroe', 'Se actualizó correctamente', 'info');
   //   Swal.update({

@@ -7,11 +7,16 @@
 
   <div class="example-button-row">
     <button routerLink="/heroes/new" mat-raised-button color="primary">Añadir Héroe</button>  
+      <mat-form-field class="example-full-width">
+        <mat-label>Buscar</mat-label>
+        <input  [ngClass]="'upper'" type="tex" matInput  placeholder="Buscar héroe" [(ngModel)]="filterPost" name="filterPost">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
   </div>
+  
 
-
-  <mat-list role="list" *ngFor="let heroe of heroes; ; let i = index">
-    <mat-list-item role="listitem" aria-labelledby> {{ i + 1}}. {{ heroe.superhero }} 
+  <mat-list role="list" *ngFor="let heroe of heroes | filter:filterPost; let i = index">
+    <mat-list-item [ngClass]="'upper'" role="listitem" aria-labelledby> {{ i + 1 }}. {{ heroe.superhero }} 
       <button class="icons" mat-icon-button color="primary" [routerLink]="['/heroes', heroe.id]">
         <mat-icon>edit</mat-icon>
       </button>
@@ -21,36 +26,11 @@
     </mat-list-item>
   </mat-list>
 
+
   <mat-paginator [length]="100"
               [pageSize]="10"
               [pageSizeOptions]="[5, 10]"
               aria-label = "Seleccionar página">
 </mat-paginator>
 
-<!--   
-  
-      <table class="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Héroe</th>
-            <th>Modificar</th>
-            <th>Eliminar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let heroe of heroes; let i = index">
-            <th>{{ i + 1 }}</th>
-            <td>{{ heroe.superhero }}</td>
-            <td>
-              <i class="fa fa-pen mx-3" [routerLink]="['/heroes/heroe', heroe.id]"></i>
-            </td>
-            <td>
-              <i class="fa fa-trash" ></i>
-               <i class="fa fa-trash" (click)="deleteUse(user, i)"></i> -->
-
-            <!--</td>
-          </tr>
-        </tbody>
-      </table> -->
-    </div>
+</div>

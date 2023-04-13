@@ -17,6 +17,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSlideToggleModule,
     MatIconModule,
     MatToolbarModule
+  ],
+  exports: [
+    NavbarComponent
   ]
 })
 export class NavbarModule { }
