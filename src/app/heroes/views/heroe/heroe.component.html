@@ -1,38 +1,71 @@
 <div class="main-container">
-
-  <h1>Información de tu Heroe</h1>
-  <hr>
+  <h1>Añade tu nuevo héroe</h1>
+  <hr />
   <div class="example-button-row">
-    <button routerLink="/heroes" mat-raised-button color="primary">Volver al listado</button>  
+    <button routerLink="/heroes" mat-raised-button color="primary">
+      Volver al listado
+    </button>
   </div>
 
+  <form class="example-form" [formGroup]="f" (ngSubmit)="save(f)">
 
-<form class="example-form">
+    <small 
+      >Campo autogenerado, no escribir
+    </small>
     <mat-form-field class="example-full-width">
-      <mat-label>Nombre héroe</mat-label>
-      <input matInput placeholder="Ex. Pizza" value=" ">
+      <mat-label>ID</mat-label>
+      <input
+        matInput
+        placeholder=""
+        type="id"
+        formControlName="id"
+        readonly
+      />
     </mat-form-field>
 
+    <small class="red" *ngIf="superheroNoValid?.invalid && superheroNoValid?.touched"
+      >Campo obligatorio. Ingrese al menos 3 letras
+    </small>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input
+        matInput
+        placeholder="Escribe el nombre"
+        type="text"
+        formControlName="superhero"
+      />
+    </mat-form-field>
+
+    <small
+      class="red"
+      *ngIf="publisherNoValid?.invalid && publisherNoValid?.touched"
+      >Campo obligatorio. Ingrese al menos 3 letras
+    </small>
     <mat-form-field class="example-full-width">
       <mat-label>Publicación</mat-label>
-      <input matInput placeholder="Ex. Pizza" value=" ">
+      <input
+        matInput
+        placeholder="Escribe la publicación"
+        type="text"
+        formControlName="publisher"
+      />
     </mat-form-field>
 
+    <small class="red" *ngIf="alterNoValid?.invalid && alterNoValid?.touched"
+      >Campo obligatorio. Ingrese al menos 3 letras
+    </small>
     <mat-form-field class="example-full-width">
       <mat-label>Alter ego</mat-label>
-      <input matInput placeholder="Ex. Pizza" value=" ">
+      <input
+        matInput
+        placeholder="alter_ego"
+        type="text"
+        formControlName="alter_ego"
+      />
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Primera aparición</mat-label>
-      <input matInput placeholder="Ex. Pizza" value=" ">
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Características</mat-label>
-      <input matInput placeholder="Ex. Pizza" value=" ">
-    </mat-form-field>
-  
-   
+    <div class="example-button-row">
+      <button mat-raised-button color="primary" type="submit">Guardar</button>
+    </div>
   </form>
 </div>

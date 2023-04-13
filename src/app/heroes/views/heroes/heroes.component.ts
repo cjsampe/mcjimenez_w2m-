@@ -1,32 +1,49 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
+import { HeroesServiceService } from '../../heroes-service.service';
+import { HeroeModel } from 'src/app/entity/heroe.entity';
 
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.scss']
+  styleUrls: ['./heroes.component.scss'],
+  providers: [HeroesServiceService]
 })
-export class HeroesComponent {
-  displayedColumns: string[] = ['superhero', 'publisher', 'alter_ego'];
-  //dataSource = new MatTableDataSource<Heroe>(ELEMENT_DATA);
+export class HeroesComponent implements OnInit {
 
-  //@ViewChild(MatPaginator) paginator: MatPaginator;
+  heroes: HeroeModel[] = [];
+  
+  dataSource = new MatTableDataSource<HeroeModel>(this.heroes);
 
-  ngAfterViewInit() {
-    //this.dataSource.paginator = this.paginator;
+  constructor( private heroesService: HeroesServiceService){
+
+  }
+
+  ngOnInit(){
+
+    this.heroesService.getAllHeroes().subscribe( (resp) => {
+      this.heroes = resp 
+      console.log(resp);});
+     
+
+      //this.dataSource.paginator = this.paginator;  
+      
+  }
+
+  deleteHeroe( heroe: HeroeModel, i: number){
+
+    //  //PREGUNTA SI ESTÁ SEGURO DE BORRARLO
+    //  Swal.fire({
+    //   title: `¿Está seguro que quiere borrar a ${ heroe.nombre}?`,
+    //   showCancelButton: true,
+    //   confirmButtonText: 'Borrar',
+    // }).then(resp => {
+      
+     // if (resp.value) {
+        this.heroes.splice(i, 1); // borrar desde la posición i, 1 posición
+    this.heroesService.deleteHeroe( heroe.id! ).subscribe();
   }
 }
-//interface para obligar a que los datos que se metan siempre sean iguales
-export interface Heroe{
-  id: string;
-  superhero: string;
-  publisher: string;
-  alter_ego: string;
-  first_appearance: string;
-  characters: string;
-  image: string;
- }
-
 
 

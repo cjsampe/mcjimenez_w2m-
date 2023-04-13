@@ -8,11 +8,18 @@
  
  .example-button-row button,
 .example-button-row a {
-  margin-right: 30px;
-  margin-left: 30px;
+  
+  justify-content: flex-end !important;
+
+  .list{
+    margin-left: 50px;
+    width: 60%;
+  }
+  
 }
 
 .example-disabled {
   display: inline-block;
 }
+
 

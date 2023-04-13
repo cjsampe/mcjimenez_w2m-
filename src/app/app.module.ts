@@ -23,7 +23,8 @@ import { NavbarModule } from './shared/navbar/navbar.module';
     BrowserAnimationsModule,
     HeroesModule,
     HeroeModule,
-    NavbarModule
+    NavbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
