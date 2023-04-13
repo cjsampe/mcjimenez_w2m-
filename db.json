@@ -2,21 +2,15 @@
   "heroes": [
     {
       "id": "0001H",
-      "superhero": "Batman",
+      "superhero": "Batman29",
       "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne",
-      "image": "https://cdn.shopify.com/s/files/1/0031/3026/1613/products/funko-pop-batman-keaton-dc-comics.jpg?v=1679685344&width=600"
+      "alter_ego": "Bruce Wayne"
     },
     {
       "id": "0002H",
-      "superhero": "Superman",
+      "superhero": "Superman2",
       "publisher": "DC Comics",
-      "alter_ego": "Kal-El",
-      "first_appearance": "Action Comics #1",
-      "characters": "Kal-El",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "alter_ego": "Kal-El"
     },
     {
       "id": "0003H",
