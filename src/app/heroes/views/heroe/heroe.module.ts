@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TranslocoModule } from '@ngneat/transloco';
 
 import { HeroeComponent } from './heroe.component';
 
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     AppRoutingModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslocoModule
   ]
 })
 export class HeroeModule { }

@@ -1,22 +1,23 @@
 .text{
     margin: 10px;
 }
-.example-card {
-    max-width : 400px ;
-    margin: 30px;
+
+ .example-button-row{
+  display:flex !important;
+  align-items: center;
  }
- 
- .example-button-row button,
-.example-button-row a {
-  
-  justify-content: flex-end !important;
 
   .list{
     margin-left: 50px;
     width: 60%;
   }
-  
-}
+.search {
+    max-width : 800px ;
+    margin-left: 90px;
+    margin-top: 1rem;
+ }
+   
+
 
 .example-disabled {
   display: inline-block;

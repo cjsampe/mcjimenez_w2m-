@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { HeroeModel } from '../entity/heroe.entity';
+import { Heroe, HeroeModel } from '../entity/heroe.entity';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,22 @@ export class HeroesServiceService {
     return this.http.post<HeroeModel>(`${this.url}heroes`, heroe);
   }
 
-  getAllHeroes(){
-    return this.http.get<HeroeModel[]>(`${this.url}heroes`);
+  // getAllHeroes(){
+  //   return this.http.get<HeroeModel[]>(`${this.url}heroes`);
+  // }
+
+  getAllHeroesByName(filter: string){
+    return this.http.get<HeroeModel[]>(`${this.url}heroes`).pipe( map( (heroes: Heroe[]) => {
+      if(filter === ''){
+
+        return heroes
+      }else{
+        return heroes.filter( (e: Heroe ) => {
+            return e.superhero!.toLowerCase().indexOf(filter.toLowerCase() )> -1
+          });
+        
+      }
+    }))
   }
 
   getHeroeById(id: string){
