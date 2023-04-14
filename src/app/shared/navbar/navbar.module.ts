@@ -5,6 +5,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { TranslocoModule } from '@ngneat/transloco';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatSlideToggleModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    TranslocoModule
   ],
   exports: [
     NavbarComponent

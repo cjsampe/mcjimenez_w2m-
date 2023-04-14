@@ -3,34 +3,65 @@
   <h1>Listado de Héroes</h1>
   <hr>
 
-
-
-  <div class="example-button-row">
+<div class="example-button-row">
+  <div>
     <button routerLink="/heroes/new" mat-raised-button color="primary">Añadir Héroe</button>  
-      <mat-form-field class="example-full-width">
-        <mat-label>Buscar</mat-label>
-        <input  [ngClass]="'upper'" type="tex" matInput  placeholder="Buscar héroe" [(ngModel)]="filterPost" name="filterPost">
-        <mat-icon matSuffix>search</mat-icon>
-      </mat-form-field>
   </div>
-  
+  <div>
+    <mat-form-field class="search">
+        <mat-label>Buscar</mat-label>
+        <!-- <input  [ngClass]="'upper'" type="tex" (click)="save()" matInput  placeholder="Buscar héroe" #termino id="termino"> -->
+        <div [formGroup]="myGroup">
+          <input formControlName="search" type="text" matInput  placeholder="Buscar héroe">
+        </div>
 
-  <mat-list role="list" *ngFor="let heroe of heroes | filter:filterPost; let i = index">
-    <mat-list-item [ngClass]="'upper'" role="listitem" aria-labelledby> {{ i + 1 }}. {{ heroe.superhero }} 
-      <button class="icons" mat-icon-button color="primary" [routerLink]="['/heroes', heroe.id]">
-        <mat-icon>edit</mat-icon>
-      </button>
-      <button mat-icon-button color="primary" (click)="deleteHeroe(heroe, i)" >
-        <mat-icon>delete</mat-icon>
-      </button>
-    </mat-list-item>
-  </mat-list>
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+    
+</div>
 
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
 
-  <mat-paginator [length]="100"
-              [pageSize]="10"
-              [pageSizeOptions]="[5, 10]"
-              aria-label = "Seleccionar página">
-</mat-paginator>
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+    </ng-container>
+
+    <!-- SuperHeroe Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Super Héroe </th>
+      <td mat-cell *matCellDef="let row"> {{row.superhero}}</td>
+    </ng-container>
+
+    <!-- Edit Column -->
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Editar </th>
+      <td mat-cell *matCellDef="let row" > 
+        <button class="icons" mat-icon-button color="primary" [routerLink]="['/heroes', row.id]"  >
+          <mat-icon >edit</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Delete Column -->
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Borrar </th>
+      <td mat-cell *matCellDef="let row" > 
+        <button mat-icon-button color="primary" (click)="deleteHeroe(row)" >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+ 
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25]" aria-label="Select page of users"></mat-paginator>
+</div>
 
 </div>

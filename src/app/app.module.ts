@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroesModule } from './heroes/views/heroes/heroes.module'; 
 import { HeroeModule } from './heroes/views/heroe/heroe.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 
 
@@ -23,7 +25,9 @@ import { NavbarModule } from './shared/navbar/navbar.module';
     BrowserAnimationsModule,
     HeroesModule,
     HeroeModule,
-    NavbarModule
+    NavbarModule,
+    HttpClientModule,
+    TranslocoRootModule
 
   ],
   providers: [],

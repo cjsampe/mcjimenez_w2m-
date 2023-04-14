@@ -1,8 +1,15 @@
-import { Component, OnInit} from '@angular/core';
-import {MatPaginator} from '@angular/material/paginator';
-import {MatTableDataSource} from '@angular/material/table';
+import { Component, OnInit, ViewChild} from '@angular/core';
+
 import { HeroesServiceService } from '../../heroes-service.service';
-import { HeroeModel } from 'src/app/entity/heroe.entity';
+import { Heroe, HeroeModel } from 'src/app/entity/heroe.entity';
+import {MatTableDataSource} from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { CloseScrollStrategy } from '@angular/cdk/overlay';
+import { FormControl, FormGroup } from '@angular/forms';
+import { debounceTime } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-heroes',
@@ -12,29 +19,55 @@ import { HeroeModel } from 'src/app/entity/heroe.entity';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes: HeroeModel[] = [];
+  heroes: Heroe[] = [];
+  displayedColumns: string[] = ['id', 'name', 'edit', 'delete'];
+  dataSource: MatTableDataSource<Heroe>;
+  search: FormControl= new FormControl('', []);
+  time: number; //time by search 
+  myGroup: FormGroup;
 
-  filterPost = '';
-  
-  
-  dataSource = new MatTableDataSource<HeroeModel>(this.heroes);
+ 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   constructor( private heroesService: HeroesServiceService){
+    
+
 
   }
-
+  
   ngOnInit(){
 
-    this.heroesService.getAllHeroes().subscribe( (resp) => {
-      this.heroes = resp 
-      console.log(resp);});
-     
+    this.searchHeroes('');
+    
+    this.myGroup = new FormGroup({
+      search: this.search
+    });
 
-      //this.dataSource.paginator = this.paginator;  
-      
+    this.search.valueChanges.pipe(debounceTime(this.time)).subscribe(data =>{
+      this.searchHeroes(data)
+    })
+
+    this.time = 600;
   }
 
-  deleteHeroe( heroe: HeroeModel, i: number){
+  searchHeroes(search:string){
+    this.heroesService.getAllHeroesByName(search).subscribe( (resp) => {
+      this.heroes = resp;
+      //Change of location relative to the Angular material sample model.
+      //In the code example included in the ngAfterViewInit(). 
+      //Modified to wait for a response from the request and to be able to collect it, otherwise empty.
+      this.dataSource = new MatTableDataSource(resp);
+      //Change of location relative to the Angular material sample model.
+      //In the code example included in the ngAfterViewInit(). 
+      //Modified to wait for a response from the request and to be able to collect it, otherwise empty.
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+    });
+
+  }
+
+  deleteHeroe( heroe: HeroeModel){
 
     //  //PREGUNTA SI ESTÁ SEGURO DE BORRARLO
     //  Swal.fire({
@@ -45,10 +78,12 @@ export class HeroesComponent implements OnInit {
       
       // if (resp.value) {
         // borrar desde la posición i, 1 posición
-        this.heroes.splice(i, 1); 
-    this.heroesService.deleteHeroe( heroe.id! ).subscribe();
+        this.heroesService.deleteHeroe( heroe.id! ).subscribe();
+        //this.heroes.splice(i, 1); 
 
   }
+        
+
 }
 
 
