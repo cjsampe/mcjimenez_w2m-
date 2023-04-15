@@ -1,4 +1,22 @@
-<mat-toolbar color="primary">
-  <span> {{ 'NAVBAR.TITLE_NAVBAR' | transloco }}</span>
-  <span class="example-spacer"></span>
-</mat-toolbar>
+<nav>
+
+  <mat-toolbar color="primary">
+    <div class="menu">
+      <div>
+        <span> {{ 'NAVBAR.TITLE_NAVBAR' | transloco }}</span>
+      </div>
+      <div>
+        <mat-form-field class="select" appearance="fill">
+          <mat-label>Idioma</mat-label>
+          <mat-select    [ngModel]="selectLang"
+          (ngModelChange)="selectLanguage($event)" name="food">
+          <mat-option *ngFor="let lenguage of lenguages" [value]="lenguage.value">
+            {{lenguage.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>  
+    </div>
+  </mat-toolbar>
+</nav>
+  

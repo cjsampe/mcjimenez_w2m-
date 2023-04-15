@@ -23,5 +23,9 @@
         "ALTER_EGO": "Alter ego",
         "ALTER_EGO_TEXT": "Write an alter ego",
         "SAVE": "Save"
+      },
+      "LANG": {
+        "EN": "English",
+        "ES": "Spanish"
       }  
 }
