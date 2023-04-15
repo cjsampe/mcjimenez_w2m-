@@ -3,6 +3,7 @@
         "TITLE_NAVBAR": "Comic Book Heroes"
       },
     "HEROES": {
+        "HEROES": "Heroes",
         "LIST_HEROES": "List of Heroes",
         "ADD_HEROES": "Add Hero",
         "SEARCH_HEROES": "Search",

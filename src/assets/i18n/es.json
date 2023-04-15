@@ -3,6 +3,7 @@
         "TITLE_NAVBAR": "Héroes de Comic"
       },
     "HEROES": {
+        "HEROES": "Héroes",
         "LIST_HEROES": "Listado de Héroes",
         "ADD_HEROES": "Añadir Héroe",
         "SEARCH_HEROES": "Buscar",
