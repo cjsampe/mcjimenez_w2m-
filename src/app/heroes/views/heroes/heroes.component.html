@@ -10,11 +10,9 @@
   <div>
     <mat-form-field class="search">
         <mat-label>Buscar</mat-label>
-        <!-- <input  [ngClass]="'upper'" type="tex" (click)="save()" matInput  placeholder="Buscar héroe" #termino id="termino"> -->
         <div [formGroup]="myGroup">
           <input formControlName="search" type="text" matInput  placeholder="Buscar héroe">
         </div>
-
         <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
   </div>

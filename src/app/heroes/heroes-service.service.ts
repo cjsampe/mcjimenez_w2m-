@@ -4,39 +4,34 @@ import { Heroe, HeroeModel } from '../entity/heroe.entity';
 import { map } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HeroesServiceService {
-
-
-
   private url = 'http://localhost:3000/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  createHeroe(heroe: HeroeModel){
+  createHeroe(heroe: HeroeModel) {
     return this.http.post<HeroeModel>(`${this.url}heroes`, heroe);
   }
 
-  // getAllHeroes(){
-  //   return this.http.get<HeroeModel[]>(`${this.url}heroes`);
-  // }
-
-  getAllHeroesByName(filter: string){
-    return this.http.get<HeroeModel[]>(`${this.url}heroes`).pipe( map( (heroes: Heroe[]) => {
-      if(filter === ''){
-
-        return heroes
-      }else{
-        return heroes.filter( (e: Heroe ) => {
-            return e.superhero!.toLowerCase().indexOf(filter.toLowerCase() )> -1
+  getAllHeroesByName(filter: string) {
+    return this.http.get<HeroeModel[]>(`${this.url}heroes`).pipe(
+      map((heroes: Heroe[]) => {
+        if (filter === '') {
+          return heroes;
+        } else {
+          return heroes.filter((e: Heroe) => {
+            return (
+              e.superhero!.toLowerCase().indexOf(filter.toLowerCase()) > -1
+            );
           });
-        
-      }
-    }))
+        }
+      })
+    );
   }
 
-  getHeroeById(id: string){
+  getHeroeById(id: string) {
     return this.http.get<HeroeModel[]>(`${this.url}heroes/${id}`);
   }
 
