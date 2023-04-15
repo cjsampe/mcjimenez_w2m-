@@ -165,6 +165,24 @@
       "superhero": "dsfsdf",
       "publisher": "dfssdfsd",
       "alter_ego": "sdfsdfsd"
+    },
+    {
+      "id": "26geu-z",
+      "superhero": "batman",
+      "publisher": "comic",
+      "alter_ego": "batman"
+    },
+    {
+      "id": "NMPqPhm",
+      "superhero": "aaaaa",
+      "publisher": "aaaaaa",
+      "alter_ego": "aaaaaa"
+    },
+    {
+      "id": "snH0wdq",
+      "superhero": "ASDA",
+      "publisher": "ASDASD",
+      "alter_ego": "SDASDSADS"
     }
   ]
 }

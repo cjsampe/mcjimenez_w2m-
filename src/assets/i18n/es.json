@@ -1,1 +1,31 @@
-{}
+{
+    "NAVBAR": {
+        "TITLE_NAVBAR": "Héroes de Comic"
+      },
+    "HEROES": {
+        "LIST_HEROES": "Listado de Héroes",
+        "ADD_HEROES": "Añadir Héroe",
+        "SEARCH_HEROES": "Buscar",
+        "SEARCH_HEROES_NAME": "Buscar por nombre",
+        "ID": "ID",
+        "NAME": "Nombre",
+        "EDIT": "Editar",
+        "DELETE": "Borrar"
+      },
+    "HEROE": {
+        "TITLE_HEROE": "Añade tu nuevo heroe",
+        "RETURN": "Volver al listado",
+        "TEXT_ID": "Campo autogenerado, no editable",
+        "TEXT_WARNING": "Campo obligatorio. Ingrese al menos 3 letras",
+        "NAME_TEXT": "Escribe un nombre",
+        "PUBLICATION": "Publicación",
+        "PUBLICATION_TEXT": "Escribe una publicación",
+        "ALTER_EGO": "Alter ego",
+        "ALTER_EGO_TEXT": "Escribe un alter ego",
+        "SAVE": "Guardar"
+      },
+      "LANG": {
+        "EN": "Inglés",
+        "ES": "Español"
+      }
+}

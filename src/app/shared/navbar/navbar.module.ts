@@ -6,6 +6,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TranslocoModule } from '@ngneat/transloco';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -18,7 +23,10 @@ import { TranslocoModule } from '@ngneat/transloco';
     MatSlideToggleModule,
     MatIconModule,
     MatToolbarModule,
-    TranslocoModule
+    TranslocoModule,
+    MatButtonModule,
+    MatSelectModule,
+    FormsModule
   ],
   exports: [
     NavbarComponent

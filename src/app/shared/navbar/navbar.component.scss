@@ -1,9 +1,25 @@
 body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 0;
-    padding: 30px;
+    margin: 2em;
+    padding: 3em;
+    width: 100% !important;
   }
   
   html, body {
     height: 100%;
+    width: 100%;
   }
+  .menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    margin-top:2em !important;
+  }
+  .button{
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  mat-toolbar{
+    height: 100px !important;
+  } 

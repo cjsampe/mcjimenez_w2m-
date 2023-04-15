@@ -1,1 +1,31 @@
-{}
+{
+    "NAVBAR": {
+        "TITLE_NAVBAR": "Comic Book Heroes"
+      },
+    "HEROES": {
+        "LIST_HEROES": "List of Heroes",
+        "ADD_HEROES": "Add Hero",
+        "SEARCH_HEROES": "Search",
+        "SEARCH_HEROES_NAME": "Search by name",
+        "ID": "ID",
+        "NAME": "Name",
+        "EDIT": "Edit",
+        "DELETE": "Delete"
+      },
+    "HEROE": {
+        "TITLE_HEROE": "Add your new hero",
+        "RETURN": "Back to the list",
+        "TEXT_ID": "Auto-generated field, not editable",
+        "TEXT_WARNING": "Required field. Enter at least 3 letters",
+        "NAME_TEXT": "Write a name",
+        "PUBLICATION": "Publication",
+        "PUBLICATION_TEXT": "Write a publication",
+        "ALTER_EGO": "Alter ego",
+        "ALTER_EGO_TEXT": "Write an alter ego",
+        "SAVE": "Save"
+      },
+      "LANG": {
+        "EN": "English",
+        "ES": "Spanish"
+      }  
+}

@@ -1,20 +1,18 @@
 <div class="main-container">
 
-  <h1>Listado de Héroes</h1>
+  <h1>{{ 'HEROES.LIST_HEROES' | transloco }}</h1>
   <hr>
 
 <div class="example-button-row">
   <div>
-    <button routerLink="/heroes/new" mat-raised-button color="primary">Añadir Héroe</button>  
+    <button routerLink="/heroes/new" mat-raised-button color="primary">{{ 'HEROES.ADD_HEROES' | transloco }}</button>  
   </div>
   <div>
     <mat-form-field class="search">
-        <mat-label>Buscar</mat-label>
-        <!-- <input  [ngClass]="'upper'" type="tex" (click)="save()" matInput  placeholder="Buscar héroe" #termino id="termino"> -->
+        <mat-label>{{ 'HEROES.SEARCH_HEROES' | transloco }}</mat-label>
         <div [formGroup]="myGroup">
-          <input formControlName="search" type="text" matInput  placeholder="Buscar héroe">
+          <input formControlName="search" type="text" matInput  placeholder="{{ 'HEROES.SEARCH_HEROES_NAME' | transloco }}">
         </div>
-
         <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
   </div>
@@ -26,19 +24,19 @@
 
     <!-- ID Column -->
     <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'HEROES.ID' | transloco }}</th>
       <td mat-cell *matCellDef="let row"> {{row.id}} </td>
     </ng-container>
 
     <!-- SuperHeroe Column -->
     <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Super Héroe </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'HEROES.NAME' | transloco }} </th>
       <td mat-cell *matCellDef="let row"> {{row.superhero}}</td>
     </ng-container>
 
     <!-- Edit Column -->
     <ng-container matColumnDef="edit">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Editar </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'HEROES.EDIT' | transloco }}</th>
       <td mat-cell *matCellDef="let row" > 
         <button class="icons" mat-icon-button color="primary" [routerLink]="['/heroes', row.id]"  >
           <mat-icon >edit</mat-icon>
@@ -48,7 +46,7 @@
 
     <!-- Delete Column -->
     <ng-container matColumnDef="delete">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Borrar </th>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{ 'HEROES.DELETE' | transloco }}</th>
       <td mat-cell *matCellDef="let row" > 
         <button mat-icon-button color="primary" (click)="deleteHeroe(row)" >
           <mat-icon>delete</mat-icon>

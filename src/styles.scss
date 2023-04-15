@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
-    padding-bottom: 50px;
+    padding-bottom:3em;
 }
 
 // input[type='id']:disabled {
@@ -13,16 +13,13 @@ body {
 
 
 .main-container{
-    margin-top: 30px;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .img-logo{
   width: 100px;
-}
-.icons{
-  justify-content: flex-end !important;
 }
 
 .upper {

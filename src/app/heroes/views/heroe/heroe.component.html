@@ -1,19 +1,19 @@
 <div class="main-container">
-  <h1>Añade tu nuevo héroe</h1>
+  <h1>{{ 'HEROE.TITLE_HEROE' | transloco }}</h1>
   <hr />
   <div class="example-button-row">
     <button routerLink="/heroes" mat-raised-button color="primary">
-      Volver al listado
+      {{ 'HEROE.RETURN' | transloco }}
     </button>
   </div>
 
   <form class="example-form" [formGroup]="f" (ngSubmit)="save(f)">
 
     <small 
-      >Campo autogenerado, no escribir
+      >{{ 'HEROE.TEXT_ID' | transloco }}
     </small>
     <mat-form-field class="example-full-width">
-      <mat-label>ID</mat-label>
+      <mat-label>{{ 'HEROES.ID' | transloco }}</mat-label>
       <input [ngClass]="'upper'"
         matInput
         placeholder=""
@@ -24,13 +24,13 @@
     </mat-form-field>
 
     <small class="red" *ngIf="superheroNoValid?.invalid && superheroNoValid?.touched"
-      >Campo obligatorio. Ingrese al menos 3 letras
+      >{{ 'HEROE.TEXT_WARNING' | transloco }}
     </small>
     <mat-form-field class="example-full-width">
-      <mat-label>Nombre</mat-label>
+      <mat-label>{{ 'HEROES.NAME' | transloco }}</mat-label>
       <input [ngClass]="'upper'"
         matInput
-        placeholder="Escribe el nombre"
+        placeholder="{{ 'HEROE.NAME_TEXT' | transloco }}"
         type="text"
         formControlName="superhero"
       />
@@ -39,33 +39,33 @@
     <small
       class="red"
       *ngIf="publisherNoValid?.invalid && publisherNoValid?.touched"
-      >Campo obligatorio. Ingrese al menos 3 letras
+      >{{ 'HEROE.TEXT_WARNING' | transloco }}
     </small>
     <mat-form-field class="example-full-width">
-      <mat-label>Publicación</mat-label>
+      <mat-label>{{ 'HEROE.PUBLICATION' | transloco }}</mat-label>
       <input [ngClass]="'upper'"
         matInput
-        placeholder="Escribe la publicación"
+        placeholder="{{ 'HEROE.PUBLICATION_TEXT' | transloco }}"
         type="text"
         formControlName="publisher"
       />
     </mat-form-field>
 
     <small class="red" *ngIf="alterNoValid?.invalid && alterNoValid?.touched"
-      >Campo obligatorio. Ingrese al menos 3 letras
+      >{{ 'HEROE.TEXT_WARNING' | transloco }}
     </small>
     <mat-form-field class="example-full-width">
-      <mat-label>Alter ego</mat-label>
+      <mat-label>{{ 'HEROE.ALTER_EGO' | transloco }}</mat-label>
       <input [ngClass]="'upper'"
         matInput
-        placeholder="alter_ego"
+        placeholder="{{ 'HEROE.ALTER_EGO_TEXT' | transloco }}"
         type="text"
         formControlName="alter_ego"
       />
     </mat-form-field>
 
     <div class="example-button-row">
-      <button mat-raised-button color="primary" type="submit">Guardar</button>
+      <button mat-raised-button color="primary" type="submit">{{ 'HEROE.SAVE' | transloco }}</button>
     </div>
   </form>
 </div>
