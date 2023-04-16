@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 import { ViewsModule } from './heroes/views.module';
+import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.component';
+
 
 
 
@@ -32,6 +34,7 @@ import { ViewsModule } from './heroes/views.module';
     HeroesRoutingModule,
     ViewsModule
   ],
+  entryComponents: [ConfirmDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -72,6 +72,6 @@ export class HeroesComponent implements OnInit {
     // if (resp.value) {
     // borrar desde la posición i, 1 posición
     this.heroesService.deleteHeroe(heroe.id!).subscribe();
-    //this.heroes.splice(i, 1);
+    this.searchHeroes('');
   }
 }
