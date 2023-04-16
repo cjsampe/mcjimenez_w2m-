@@ -7,8 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeroesModule } from './heroes/views/heroes/heroes.module'; 
-import { HeroeModule } from './heroes/views/heroe/heroe.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
@@ -26,8 +24,6 @@ import { HeroesRoutingModule } from './heroes/heroes-routing.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // HeroesModule,
-    // HeroeModule,
     NavbarModule,
     HttpClientModule,
     TranslocoRootModule,

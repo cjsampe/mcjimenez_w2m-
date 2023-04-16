@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%;width: 100%; }
+html, body { height: 100%; width: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
@@ -13,13 +13,12 @@ body {
 
 
 .main-container{
-    margin-top: 3em;
-    margin-left: 5%;
-    margin-right: 5%;
+  padding-bottom:3em !important;
 }
 
 .img-logo{
   width: 100px;
+  position: center;
 }
 
 .upper {

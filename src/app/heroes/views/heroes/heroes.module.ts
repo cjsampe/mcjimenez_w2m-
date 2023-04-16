@@ -16,14 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { FilterPipe } from 'src/app/pipes/filter.pipe';
 import { HeroesRoutingModule } from '../../heroes-routing.module';
 
 
 @NgModule({
   declarations: [
-    HeroesComponent,
-    FilterPipe
+    HeroesComponent
 
   ],
   imports: [
