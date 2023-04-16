@@ -12,6 +12,9 @@ import { HeroeModule } from './heroes/views/heroe/heroe.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { HeroesRoutingModule } from './heroes/heroes-routing.module';
+
+
 
 
 
@@ -23,12 +26,14 @@ import { TranslocoRootModule } from './transloco-root.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HeroesModule,
-    HeroeModule,
+    // HeroesModule,
+    // HeroeModule,
     NavbarModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    HeroesRoutingModule,
 
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

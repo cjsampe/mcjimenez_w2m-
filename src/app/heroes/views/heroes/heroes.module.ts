@@ -12,12 +12,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { TranslocoModule } from '@ngneat/transloco';
 
 
-import { AppRoutingModule } from 'src/app/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { FilterPipe } from 'src/app/pipes/filter.pipe';
+import { HeroesRoutingModule } from '../../heroes-routing.module';
 
 
 @NgModule({
@@ -31,7 +31,6 @@ import { FilterPipe } from 'src/app/pipes/filter.pipe';
     MatSlideToggleModule,
     MatButtonModule,
     HttpClientModule,
-    AppRoutingModule,
     MatListModule,
     MatIconModule,
     MatPaginatorModule,
@@ -39,7 +38,8 @@ import { FilterPipe } from 'src/app/pipes/filter.pipe';
     FormsModule,
     TranslocoModule,
     MatTableModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HeroesRoutingModule
 
   ]
 })

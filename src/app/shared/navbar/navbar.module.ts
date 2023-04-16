@@ -9,6 +9,7 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../../app-routing.module';
 
 
 
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     TranslocoModule,
     MatButtonModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   exports: [
     NavbarComponent
