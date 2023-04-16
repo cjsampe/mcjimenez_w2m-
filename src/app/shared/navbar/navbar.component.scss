@@ -14,6 +14,11 @@ body {
     display: flex;
     justify-content: space-between !important;
     margin-top:2em !important;
+    margin-left: 2em;
+    margin-right: 2em;
+    .item{
+      margin:1em;
+    }
   }
   .button{
     margin-right: 1em;
@@ -22,4 +27,5 @@ body {
 
   mat-toolbar{
     height: 100px !important;
+    width: 100% !important;
   } 

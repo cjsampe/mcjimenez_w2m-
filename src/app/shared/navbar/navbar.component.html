@@ -3,7 +3,13 @@
   <mat-toolbar color="primary">
     <div class="menu">
       <div>
-        <span> {{ 'NAVBAR.TITLE_NAVBAR' | transloco }}</span>
+        <span><strong> {{ 'NAVBAR.TITLE_NAVBAR' | transloco }} </strong></span>
+        <button mat-button routerLink="/home">{{ 'NAVBAR.HOME' | transloco }}</button>
+        <button mat-button routerLink="/heroes/heroes">{{ 'HEROES.HEROES' | transloco }}</button>
+        
+      </div>
+      <div>
+        
       </div>
       <div>
         <mat-form-field class="select" appearance="fill">
@@ -18,5 +24,6 @@
       </div>  
     </div>
   </mat-toolbar>
+
 </nav>
   

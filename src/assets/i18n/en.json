@@ -1,12 +1,14 @@
 {
     "NAVBAR": {
-        "TITLE_NAVBAR": "Comic Book Heroes"
+        "TITLE_NAVBAR": "Comic Book Heroes",
+        "HOME": "Home"
       },
     "HEROES": {
+        "HEROES": "Heroes",
         "LIST_HEROES": "List of Heroes",
         "ADD_HEROES": "Add Hero",
         "SEARCH_HEROES": "Search",
-        "SEARCH_HEROES_NAME": "Search by name",
+        "SEARCH_HEROES_NAME": "By name",
         "ID": "ID",
         "NAME": "Name",
         "EDIT": "Edit",

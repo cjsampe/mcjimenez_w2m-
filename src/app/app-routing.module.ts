@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeroesComponent } from './heroes/views/heroes/heroes.component'; 
-import { HeroeComponent } from './heroes/views/heroe/heroe.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: 'heroes', component: HeroesComponent},
-  {path: 'heroes/:id', component: HeroeComponent},
-  // {path: 'navbar', component: NavbarComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'heroes'}
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'heroes',
+    loadChildren: () =>
+      import('src/app/heroes/views.module').then((m) => m.ViewsModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'heroes',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

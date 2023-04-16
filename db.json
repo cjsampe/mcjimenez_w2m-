@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": "0002H",
-      "superhero": "Superman2",
+      "superhero": "Superman",
       "publisher": "DC Comics",
       "alter_ego": "Kal-El"
     },
@@ -183,6 +183,12 @@
       "superhero": "ASDA",
       "publisher": "ASDASD",
       "alter_ego": "SDASDSADS"
+    },
+    {
+      "id": "kLitC3i",
+      "superhero": "eoo",
+      "publisher": "eeeeeeee",
+      "alter_ego": "eeeeeeee"
     }
   ]
 }
