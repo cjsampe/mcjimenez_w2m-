@@ -11,6 +11,7 @@ import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { HeroesRoutingModule } from './heroes/heroes-routing.module';
+import { ViewsModule } from './heroes/views.module';
 
 
 
@@ -19,6 +20,7 @@ import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -28,8 +30,7 @@ import { HeroesRoutingModule } from './heroes/heroes-routing.module';
     HttpClientModule,
     TranslocoRootModule,
     HeroesRoutingModule,
-
-   
+    ViewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
