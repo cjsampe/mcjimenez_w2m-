@@ -73,7 +73,7 @@ export class HeroesComponent implements OnInit {
   }
 
   openDialog(heroe: HeroeModel){
-    const dialogRef = this.dialog.open(ConfirmDialogComponent, { width: '350px', data: 'Are you sure deletion this hereoe?'});
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, { width: '350px'});
     dialogRef.afterClosed().subscribe( res => {
       console.log(res);
       if(res){
