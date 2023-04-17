@@ -3,6 +3,9 @@
         "TITLE_NAVBAR": "Héroes de Comic",
         "HOME": "Inicio"
       },
+    "HOME": {
+        "TEXT": "Prueba técnica de Carmen Jiménez Sampériz"
+      }, 
     "HEROES": {
         "HEROES": "Héroes",
         "LIST_HEROES": "Listado de Héroes",
@@ -26,7 +29,7 @@
         "ALTER_EGO_TEXT": "Escribe un alter ego",
         "SAVE": "Guardar"
       },
-      "LANG": {
+    "LANG": {
         "EN": "Inglés",
         "ES": "Español"
       }

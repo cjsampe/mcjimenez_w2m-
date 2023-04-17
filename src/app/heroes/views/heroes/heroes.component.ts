@@ -68,15 +68,6 @@ export class HeroesComponent implements OnInit {
   }
 
   deleteHeroe(heroe: HeroeModel) {
-    //  //PREGUNTA SI ESTÁ SEGURO DE BORRARLO
-    //  Swal.fire({
-    //   title: `¿Está seguro que quiere borrar a ${ heroe.nombre}?`,
-    //   showCancelButton: true,
-    //   confirmButtonText: 'Borrar',
-    // }).then(resp => {
-
-    // if (resp.value) {
-    // borrar desde la posición i, 1 posición
     this.heroesService.deleteHeroe(heroe.id!).subscribe();
     this.searchHeroes('');
   }

@@ -16,6 +16,7 @@ import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.c
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { ConfirmDialogModule } from './shared/confirm-dialog/confirm-dialog.module';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -39,7 +40,8 @@ import { ConfirmDialogModule } from './shared/confirm-dialog/confirm-dialog.modu
     ViewsModule,
     MatButtonModule,
     MatDialogModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    HomeModule
   ],
   //entryComponents: [ConfirmDialogComponent],
   providers: [],
