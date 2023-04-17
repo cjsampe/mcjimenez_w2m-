@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { HeroesRoutingModule } from '../../heroes-routing.module';
+
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { HeroesRoutingModule } from '../../heroes-routing.module';
     TranslocoModule,
     MatTableModule,
     ReactiveFormsModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    MatDialogModule
 
   ]
 })

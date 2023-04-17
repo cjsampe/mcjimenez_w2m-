@@ -3,6 +3,9 @@
         "TITLE_NAVBAR": "Comic Book Heroes",
         "HOME": "Home"
       },
+    "HOME": {
+        "TEXT": "Technical test by Carmen Jiménez Sampériz"
+      },  
     "HEROES": {
         "HEROES": "Heroes",
         "LIST_HEROES": "List of Heroes",

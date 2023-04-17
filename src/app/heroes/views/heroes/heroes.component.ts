@@ -8,6 +8,10 @@ import { MatSort } from '@angular/material/sort';
 import { FormControl, FormGroup } from '@angular/forms';
 import { debounceTime } from 'rxjs';
 
+//dialog
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmDialogComponent } from 'src/app/shared/confirm-dialog/confirm-dialog.component';
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -27,7 +31,9 @@ export class HeroesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(private heroesService: HeroesServiceService) {}
+  constructor(private heroesService: HeroesServiceService,
+              public dialog: MatDialog
+    ) {}
 
   ngOnInit() {
     this.searchHeroes('');
@@ -62,16 +68,20 @@ export class HeroesComponent implements OnInit {
   }
 
   deleteHeroe(heroe: HeroeModel) {
-    //  //PREGUNTA SI ESTÁ SEGURO DE BORRARLO
-    //  Swal.fire({
-    //   title: `¿Está seguro que quiere borrar a ${ heroe.nombre}?`,
-    //   showCancelButton: true,
-    //   confirmButtonText: 'Borrar',
-    // }).then(resp => {
-
-    // if (resp.value) {
-    // borrar desde la posición i, 1 posición
     this.heroesService.deleteHeroe(heroe.id!).subscribe();
-    //this.heroes.splice(i, 1);
+    this.searchHeroes('');
+  }
+
+  openDialog(heroe: HeroeModel){
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, { width: '350px', data: 'Are you sure deletion this hereoe?'});
+    dialogRef.afterClosed().subscribe( res => {
+      console.log(res);
+      if(res){
+        console.log('hola');
+        
+        this.deleteHeroe(heroe);
+        this.searchHeroes('');
+      } 
+    });
   }
 }

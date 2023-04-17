@@ -11,13 +11,16 @@ import { HeroeComponent } from './heroe.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HeroesRoutingModule } from '../../heroes-routing.module';
+import { UppercaseDirective } from 'src/app/uppercase.directive';
+
 
 
 
 
 @NgModule({
   declarations: [
-    HeroeComponent
+    HeroeComponent,
+    UppercaseDirective
   ],
   imports: [
     CommonModule,

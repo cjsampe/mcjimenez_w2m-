@@ -1,194 +1,130 @@
 {
   "heroes": [
     {
-      "id": "0002H",
-      "superhero": "Superman",
-      "publisher": "DC Comics",
-      "alter_ego": "Kal-El"
+      "id": "00001H",
+      "superhero": "BATMAN",
+      "publisher": "DC COMICSS",
+      "alter_ego": "BRUCE WAYNE"
     },
     {
-      "id": "0003H",
-      "superhero": "Flash",
-      "publisher": "DC Comics",
-      "alter_ego": "Jay Garrick",
-      "first_appearance": "Flash Comics #1",
-      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "id": "00002H",
+      "superhero": "SUPERMAN",
+      "publisher": "DC COMICS",
+      "alter_ego": "KAL-EL"
     },
     {
-      "id": "0004H",
-      "superhero": "Green Lantern",
-      "publisher": "DC Comics",
-      "alter_ego": "Alan Scott",
-      "first_appearance": "All-American Comics #16",
-      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "id": "00003H",
+      "superhero": "FLASH",
+      "publisher": "DC COMICS",
+      "alter_ego": "JAY GARRICK"
     },
     {
-      "id": "0005H",
-      "superhero": "Green Arrow",
-      "publisher": "DC Comics",
-      "alter_ego": "Oliver Queen",
-      "first_appearance": "More Fun Comics #73",
-      "characters": "Oliver Queen",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "id": "00004H",
+      "superhero": "GREEN LANTERN",
+      "publisher": "DC COMICS",
+      "alter_ego": "ALAN SCOTT"
     },
     {
-      "id": "0006H",
-      "superhero": "Wonder Woman",
-      "publisher": "DC Comics",
-      "alter_ego": "Princess Diana",
-      "first_appearance": "All Star Comics #8",
-      "characters": "Princess Diana",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "id": "00005H",
+      "superhero": "GREEN ARROW",
+      "publisher": "DC COMICS",
+      "alter_ego": "OLIVER QUEEN"
     },
     {
-      "id": "0007H",
-      "superhero": "Martian Manhunter",
-      "publisher": "DC Comics",
-      "alter_ego": "J'onn J'onzz",
-      "first_appearance": "Detective Comics #225",
-      "characters": "Martian Manhunter",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "id": "00006H",
+      "superhero": "WONDER WOMAN",
+      "publisher": "DC COMICS",
+      "alter_ego": "PRINCESS DIANA"
     },
     {
-      "id": "0008H",
-      "superhero": "Robin/Nightwing",
-      "publisher": "DC Comics",
-      "alter_ego": "Dick Grayson",
-      "first_appearance": "Detective Comics #38",
-      "characters": "Dick Grayson",
-      "image": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
+      "id": "00007H",
+      "superhero": "MARTIAN MANHUNTER",
+      "publisher": "DC COMICS",
+      "alter_ego": "J'ONN J'ONZZ"
     },
     {
-      "id": "0009H",
-      "superhero": "Blue Beetle",
-      "publisher": "DC Comics",
-      "alter_ego": "Dan Garret",
-      "first_appearance": "Mystery Men Comics #1",
-      "characters": "Dan Garret, Ted Kord, Jaime Reyes"
+      "id": "00008H",
+      "superhero": "ROBIN/NIGHTWING",
+      "publisher": "DC COMICS",
+      "alter_ego": "DICK GRAYSON"
     },
     {
-      "id": "0010H",
-      "superhero": "Black Canary",
-      "publisher": "DC Comics",
-      "alter_ego": "Dinah Drake",
-      "first_appearance": "Flash Comics #86",
-      "characters": "Dinah Drake, Dinah Lance"
+      "id": "00009H",
+      "superhero": "BLUE BEETLE",
+      "publisher": "DC COMICS",
+      "alter_ego": "DAN GARRET"
     },
     {
-      "id": "0011H",
-      "superhero": "Spider Manhghf",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Peter Parker"
+      "id": "00010H",
+      "superhero": "BLACK CANARY",
+      "publisher": "DC COMICS",
+      "alter_ego": "DINAH DRAKE"
     },
     {
-      "id": "0012H",
-      "superhero": "Captain America",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Steve Rogers",
-      "first_appearance": "Captain America Comics #1",
-      "characters": "Steve Rogers"
+      "id": "00011H",
+      "superhero": "SPIDER MAN",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "PETER PARKER"
     },
     {
-      "id": "0013H",
-      "superhero": "Iron Man",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Tony Stark",
-      "first_appearance": "Tales of Suspense #39",
-      "characters": "Tony Stark"
+      "id": "00012H",
+      "superhero": "CAPTAIN AMERICA",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "STEVE ROGERS"
     },
     {
-      "id": "0014H",
-      "superhero": "Thor",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Thor Odinson",
-      "first_appearance": "Journey into Myster #83",
-      "characters": "Thor Odinson"
+      "id": "00013H",
+      "superhero": "IRON MAN",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "TONY STARK"
     },
     {
-      "id": "0015H",
-      "superhero": "Hulk",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Bruce Banner",
-      "first_appearance": "The Incredible Hulk #1",
-      "characters": "Bruce Banner"
+      "id": "00014H",
+      "superhero": "THOR",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "THOR ODINSON"
     },
     {
-      "id": "0016H",
-      "superhero": "Wolverine",
-      "publisher": "Marvel Comics",
-      "alter_ego": "James Howlett",
-      "first_appearance": "The Incredible Hulk #180",
-      "characters": "James Howlett"
+      "id": "00015H",
+      "superhero": "HULK",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "BRUCE BANNER"
     },
     {
-      "id": "0017H",
-      "superhero": "Daredevil",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Matthew Michael Murdock",
-      "first_appearance": "Daredevil #1",
-      "characters": "Matthew Michael Murdock"
+      "id": "00016H",
+      "superhero": "WOLVERINE",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "JAMES HOWLETT"
     },
     {
-      "id": "0018H",
-      "superhero": "Hawkeye",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Clinton Francis Barton",
-      "first_appearance": "Tales of Suspense #57",
-      "characters": "Clinton Francis Barton"
+      "id": "00017H",
+      "superhero": "DAREDEVIL",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "MATTHEW MICHAEL MURDOCK"
     },
     {
-      "id": "0019H",
-      "superhero": "Cyclops",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
+      "id": "00018H",
+      "superhero": "HAWKEYE",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "CLINTON FRANCIS BARTON"
     },
     {
-      "id": "0020H",
-      "superhero": "Silver Surfer",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Norrin Radd",
-      "first_appearance": "The Fantastic Four #48",
-      "characters": "Norrin Radd"
+      "id": "00019H",
+      "superhero": "CYCLOPS",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "SCOTT SUMMERS"
     },
     {
-      "id": "ZGUnTSw",
-      "superhero": "adasda",
-      "publisher": "adasd",
-      "alter_ego": "asdads"
+      "id": "00020H",
+      "superhero": "SILVER SURFER",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "NORRIN RADD"
     },
     {
-      "id": "aS6WlHR",
-      "superhero": "dsfsdf",
-      "publisher": "dfssdfsd",
-      "alter_ego": "sdfsdfsd"
-    },
-    {
-      "id": "26geu-z",
-      "superhero": "batman",
-      "publisher": "comic",
-      "alter_ego": "batman"
-    },
-    {
-      "id": "NMPqPhm",
-      "superhero": "aaaaa",
-      "publisher": "aaaaaa",
-      "alter_ego": "aaaaaa"
-    },
-    {
-      "id": "snH0wdq",
-      "superhero": "ASDA",
-      "publisher": "ASDASD",
-      "alter_ego": "SDASDSADS"
-    },
-    {
-      "id": "kLitC3i",
-      "superhero": "eoo",
-      "publisher": "eeeeeeee",
-      "alter_ego": "eeeeeeee"
+      "id": "T7UJ7IL",
+      "superhero": "CARMEN",
+      "publisher": "CARMEN",
+      "alter_ego": "CARMEN"
     }
   ]
 }

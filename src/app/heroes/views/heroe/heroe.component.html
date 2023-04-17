@@ -28,7 +28,8 @@
     </small>
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROES.NAME' | transloco }}</mat-label>
-      <input [ngClass]="'upper'"
+      <input 
+      appUppercase
         matInput
         placeholder="{{ 'HEROE.NAME_TEXT' | transloco }}"
         type="text"
@@ -43,7 +44,7 @@
     </small>
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROE.PUBLICATION' | transloco }}</mat-label>
-      <input [ngClass]="'upper'"
+      <input appUppercase
         matInput
         placeholder="{{ 'HEROE.PUBLICATION_TEXT' | transloco }}"
         type="text"
@@ -56,7 +57,7 @@
     </small>
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROE.ALTER_EGO' | transloco }}</mat-label>
-      <input [ngClass]="'upper'"
+      <input appUppercase
         matInput
         placeholder="{{ 'HEROE.ALTER_EGO_TEXT' | transloco }}"
         type="text"
