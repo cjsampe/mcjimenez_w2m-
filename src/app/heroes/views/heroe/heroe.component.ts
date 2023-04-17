@@ -17,7 +17,7 @@ export class HeroeComponent implements OnInit {
   f!: FormGroup;
 
   //loading
-  loading: boolean = false;
+  loading: boolean;
 
 
 constructor(private fb: FormBuilder,
@@ -28,9 +28,8 @@ constructor(private fb: FormBuilder,
 }
 
 ngOnInit(){
+  this.loading=false;
   this.createForm();
-
-  
 
     const id = this.route.snapshot.paramMap.get('id') || '';
    
