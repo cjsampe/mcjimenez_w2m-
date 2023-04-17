@@ -7,6 +7,8 @@
     </button>
   </div>
 
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
   <form class="example-form" [formGroup]="f" (ngSubmit)="save(f)">
 
     <small 

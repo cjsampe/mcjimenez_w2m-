@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": "00001H",
-      "superhero": "BATMANYU",
+      "superhero": "BATMANYUSSS",
       "publisher": "DC COMICSS",
       "alter_ego": "BRUCE WAYNE"
     },
@@ -119,12 +119,6 @@
       "superhero": "SILVER SURFER",
       "publisher": "MARVEL COMICS",
       "alter_ego": "NORRIN RADD"
-    },
-    {
-      "id": "T7UJ7IL",
-      "superhero": "CARMEN",
-      "publisher": "CARMEN",
-      "alter_ego": "CARMEN"
     }
   ]
 }
