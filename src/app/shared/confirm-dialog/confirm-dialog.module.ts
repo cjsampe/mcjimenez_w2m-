@@ -8,6 +8,7 @@ import { ConfirmDialogComponent } from './confirm-dialog.component';
 
 
 
+
 @NgModule({
   declarations: [
     ConfirmDialogComponent
@@ -16,6 +17,7 @@ import { ConfirmDialogComponent } from './confirm-dialog.component';
     CommonModule,
     MatButtonModule,
     MatDialogModule
-  ]
+  ],
+  entryComponents: [ConfirmDialogComponent],
 })
 export class ConfirmDialogModule { }

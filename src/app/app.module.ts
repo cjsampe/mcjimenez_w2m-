@@ -13,7 +13,9 @@ import { TranslocoRootModule } from './transloco-root.module';
 import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 import { ViewsModule } from './heroes/views.module';
 import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { ConfirmDialogModule } from './shared/confirm-dialog/confirm-dialog.module';
 
 
 
@@ -22,6 +24,8 @@ import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.c
 @NgModule({
   declarations: [
     AppComponent,
+    //ConfirmDialogComponent
+
   
   ],
   imports: [
@@ -32,9 +36,12 @@ import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.c
     HttpClientModule,
     TranslocoRootModule,
     HeroesRoutingModule,
-    ViewsModule
+    ViewsModule,
+    MatButtonModule,
+    MatDialogModule,
+    ConfirmDialogModule
   ],
-  entryComponents: [ConfirmDialogComponent],
+  //entryComponents: [ConfirmDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
