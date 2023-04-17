@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 import { AppRoutingModule } from './app-routing.module';
-
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,23 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 import { ViewsModule } from './heroes/views.module';
-import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { ConfirmDialogModule } from './shared/confirm-dialog/confirm-dialog.module';
 import { HomeModule } from './home/home.module';
 
-
-
-
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    //ConfirmDialogComponent
-
-  
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -41,10 +29,10 @@ import { HomeModule } from './home/home.module';
     MatButtonModule,
     MatDialogModule,
     ConfirmDialogModule,
-    HomeModule
+    HomeModule,
   ],
   //entryComponents: [ConfirmDialogComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

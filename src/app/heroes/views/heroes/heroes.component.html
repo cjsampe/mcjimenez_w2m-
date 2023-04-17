@@ -19,13 +19,15 @@
     
 </div>
 
+<mat-spinner *ngIf="loading"></mat-spinner>
+
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource" matSort>
 
     <!-- ID Column -->
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ 'HEROES.ID' | transloco }}</th>
-      <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+      <td mat-cell [ngClass]="'upper'" *matCellDef="let row"> {{row.id}} </td>
     </ng-container>
 
     <!-- SuperHeroe Column -->

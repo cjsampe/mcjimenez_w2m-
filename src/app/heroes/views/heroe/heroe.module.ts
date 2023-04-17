@@ -12,6 +12,8 @@ import { HeroeComponent } from './heroe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeroesRoutingModule } from '../../heroes-routing.module';
 import { UppercaseDirective } from 'src/app/uppercase.directive';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 
 
@@ -30,7 +32,8 @@ import { UppercaseDirective } from 'src/app/uppercase.directive';
     MatButtonModule,
     ReactiveFormsModule,
     TranslocoModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    MatProgressSpinnerModule
   ]
 })
 export class HeroeModule { }

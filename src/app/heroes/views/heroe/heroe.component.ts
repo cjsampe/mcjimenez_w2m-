@@ -16,6 +16,9 @@ export class HeroeComponent implements OnInit {
   heroe: HeroeModel = new HeroeModel();
   f!: FormGroup;
 
+  //loading
+  loading: boolean;
+
 
 constructor(private fb: FormBuilder,
             private heroesService: HeroesServiceService,
@@ -25,16 +28,18 @@ constructor(private fb: FormBuilder,
 }
 
 ngOnInit(){
+  this.loading=false;
   this.createForm();
 
     const id = this.route.snapshot.paramMap.get('id') || '';
-    
-
+   
     this.heroesService.getHeroeById(id).subscribe((resp: any) => {
       console.log(resp);
       this.heroe = resp;
       this.heroe.id = id;
+      this.loading=false;
       this.loadData();
+     
     });
 
 }
@@ -69,7 +74,7 @@ loadData() {
 save(f: FormGroup){
   this.heroe = this.f.value;
 
-  
+  this.loading=true;
   let call: Observable<HeroeModel>;
 
   if (this.heroe.id){
@@ -81,14 +86,11 @@ save(f: FormGroup){
   
   call.subscribe ( resp =>{
     resp = this.heroe; //opcional para que no me error
-
-  //   Swal.fire('Tu héroe', 'Se actualizó correctamente', 'info');
-  //   Swal.update({
-  //   icon: 'success'
-  // }); 
+    this.loading= false;
   });
 
 
   this.router.navigateByUrl('/heroes');
+  
 }
 }

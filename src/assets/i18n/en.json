@@ -15,7 +15,10 @@
         "ID": "ID",
         "NAME": "Name",
         "EDIT": "Edit",
-        "DELETE": "Delete"
+        "DELETE": "Delete",
+        "YES": "Yes",
+        "NOT": "No",
+        "DELETE.MESSAGE": "Are you sure you want to erase this hero?"
       },
     "HEROE": {
         "TITLE_HEROE": "Add your new hero",

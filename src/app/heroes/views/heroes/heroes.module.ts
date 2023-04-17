@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { HeroesRoutingModule } from '../../heroes-routing.module';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 
@@ -40,7 +41,8 @@ import { HeroesRoutingModule } from '../../heroes-routing.module';
     MatTableModule,
     ReactiveFormsModule,
     HeroesRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    MatProgressSpinnerModule
 
   ]
 })

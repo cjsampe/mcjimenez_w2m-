@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
+import { TranslocoModule } from '@ngneat/transloco';
+
 
 
 
@@ -16,7 +18,8 @@ import { ConfirmDialogComponent } from './confirm-dialog.component';
   imports: [
     CommonModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    TranslocoModule
   ],
   entryComponents: [ConfirmDialogComponent],
 })

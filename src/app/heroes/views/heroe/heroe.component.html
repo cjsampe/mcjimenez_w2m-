@@ -7,6 +7,8 @@
     </button>
   </div>
 
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
   <form class="example-form" [formGroup]="f" (ngSubmit)="save(f)">
 
     <small 
@@ -15,7 +17,7 @@
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROES.ID' | transloco }}</mat-label>
       <input [ngClass]="'upper'"
-        matInput
+        matInput 
         placeholder=""
         type="id"
         formControlName="id"
@@ -28,8 +30,7 @@
     </small>
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROES.NAME' | transloco }}</mat-label>
-      <input 
-      appUppercase
+      <input uppercase
         matInput
         placeholder="{{ 'HEROE.NAME_TEXT' | transloco }}"
         type="text"
@@ -44,7 +45,7 @@
     </small>
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROE.PUBLICATION' | transloco }}</mat-label>
-      <input appUppercase
+      <input uppercase
         matInput
         placeholder="{{ 'HEROE.PUBLICATION_TEXT' | transloco }}"
         type="text"
@@ -57,7 +58,7 @@
     </small>
     <mat-form-field class="example-full-width">
       <mat-label>{{ 'HEROE.ALTER_EGO' | transloco }}</mat-label>
-      <input appUppercase
+      <input uppercase
         matInput
         placeholder="{{ 'HEROE.ALTER_EGO_TEXT' | transloco }}"
         type="text"

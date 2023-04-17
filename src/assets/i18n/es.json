@@ -15,7 +15,10 @@
         "ID": "ID",
         "NAME": "Nombre",
         "EDIT": "Editar",
-        "DELETE": "Borrar"
+        "DELETE": "Borrar",
+        "YES": "Sí",
+        "NOT": "No",
+        "DELETE.MESSAGE": "¿Está seguro de querer borrar este héroe?"
       },
     "HEROE": {
         "TITLE_HEROE": "Añade tu nuevo heroe",

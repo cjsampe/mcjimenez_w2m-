@@ -1,6 +1,6 @@
-<div mat-dialog-content> {{message}}</div>
+<div mat-dialog-content> {{ 'HEROES.DELETE.MESSAGE' | transloco }}</div>
 <div mat-dialog-actions>
-    <button mat-button (click)="onClickNO()">NO</button>
-    <button mat-button [mat-dialog-close]="true">Sí</button>
+    <button mat-button (click)="onClickNO()">{{ 'HEROES.NOT' | transloco }}</button>
+    <button mat-button [mat-dialog-close]="true">{{ 'HEROES.YES' | transloco }}</button>
 
 </div>
