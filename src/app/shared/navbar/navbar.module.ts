@@ -11,13 +11,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../../app-routing.module';
 
-
-
-
 @NgModule({
-  declarations: [
-    NavbarComponent
-  ],
+  declarations: [NavbarComponent],
   imports: [
     CommonModule,
     MatCardModule,
@@ -28,10 +23,8 @@ import { AppRoutingModule } from '../../app-routing.module';
     MatButtonModule,
     MatSelectModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  exports: [
-    NavbarComponent
-  ]
+  exports: [NavbarComponent],
 })
-export class NavbarModule { }
+export class NavbarModule {}

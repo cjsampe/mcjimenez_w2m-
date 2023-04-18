@@ -1,25 +1,33 @@
 <mat-toolbar color="primary">
-    <div class="menu">
-      <div>
-        <span><strong> {{ 'NAVBAR.TITLE_NAVBAR' | transloco }} </strong></span>
-        <button mat-button routerLink="/home">{{ 'NAVBAR.HOME' | transloco }}</button>
-        <button mat-button routerLink="/heroes/heroes">{{ 'HEROES.HEROES' | transloco }}</button>
-        
-      </div>
-      <div>
-        
-      </div>
-      <div>
-        <mat-form-field class="select" appearance="fill">
-          <mat-label>Idioma</mat-label>
-          <mat-select    [ngModel]="selectLang"
-          (ngModelChange)="selectLanguage($event)" name="food">
-          <mat-option *ngFor="let lenguage of lenguages" [value]="lenguage.value">
-            {{lenguage.viewValue}}
+  <div class="menu">
+    <div>
+      <span
+        ><strong> {{ "NAVBAR.TITLE_NAVBAR" | transloco }} </strong></span
+      >
+      <button mat-button routerLink="/home">
+        {{ "NAVBAR.HOME" | transloco }}
+      </button>
+      <button mat-button routerLink="/heroes/heroes">
+        {{ "HEROES.HEROES" | transloco }}
+      </button>
+    </div>
+    <div></div>
+    <div>
+      <mat-form-field class="select" appearance="fill">
+        <mat-label>Idioma</mat-label>
+        <mat-select
+          [ngModel]="selectLang"
+          (ngModelChange)="selectLanguage($event)"
+          name="food"
+        >
+          <mat-option
+            *ngFor="let lenguage of lenguages"
+            [value]="lenguage.value"
+          >
+            {{ lenguage.viewValue }}
           </mat-option>
         </mat-select>
       </mat-form-field>
-      </div>  
     </div>
-  </mat-toolbar>
-  
+  </div>
+</mat-toolbar>

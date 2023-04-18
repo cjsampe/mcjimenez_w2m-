@@ -31,7 +31,6 @@ import { HomeModule } from './home/home.module';
     ConfirmDialogModule,
     HomeModule,
   ],
-  //entryComponents: [ConfirmDialogComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

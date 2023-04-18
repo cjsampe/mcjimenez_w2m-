@@ -14,16 +14,8 @@ import { HeroesRoutingModule } from '../../heroes-routing.module';
 import { UppercaseDirective } from 'src/app/uppercase.directive';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-
-
-
-
-
 @NgModule({
-  declarations: [
-    HeroeComponent,
-    UppercaseDirective
-  ],
+  declarations: [HeroeComponent, UppercaseDirective],
   imports: [
     CommonModule,
     MatSlideToggleModule,
@@ -33,7 +25,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule,
     TranslocoModule,
     HeroesRoutingModule,
-    MatProgressSpinnerModule
-  ]
+    MatProgressSpinnerModule,
+  ],
 })
-export class HeroeModule { }
+export class HeroeModule {}
