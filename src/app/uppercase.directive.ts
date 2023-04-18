@@ -2,7 +2,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 
 
 
-///// **************************************ANTERIOR*****************************************
+
 @Directive({
   selector: '[appUppercase]',
 })
