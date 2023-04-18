@@ -1,5 +1,4 @@
 export class HeroeModel {
-
   id?: string = '';
   superhero?: string = '';
   publisher?: string = '';
@@ -7,7 +6,6 @@ export class HeroeModel {
 }
 
 export interface Heroe {
-
   id?: string;
   superhero?: string;
   publisher?: string;

@@ -12,7 +12,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { TranslocoModule } from '@ngneat/transloco';
 
-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -20,13 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeroesRoutingModule } from '../../heroes-routing.module';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-
-
 @NgModule({
-  declarations: [
-    HeroesComponent
-
-  ],
+  declarations: [HeroesComponent],
   imports: [
     CommonModule,
     MatSlideToggleModule,
@@ -42,8 +36,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule,
     HeroesRoutingModule,
     MatDialogModule,
-    MatProgressSpinnerModule
-
-  ]
+    MatProgressSpinnerModule,
+  ],
 })
-export class HeroesModule { }
+export class HeroesModule {}

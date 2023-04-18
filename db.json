@@ -2,13 +2,13 @@
   "heroes": [
     {
       "id": "00001H",
-      "superhero": "BATMANDASDASDCZ DFSDFSDf",
-      "publisher": "CXVXC AKDHKAJSKd",
+      "superhero": "BATMAN",
+      "publisher": "CXVXC",
       "alter_ego": "VBMVMVBM"
     },
     {
       "id": "00002H",
-      "superhero": "SUPERMAN",
+      "superhero": "SUPERMAN ",
       "publisher": "DC COMICS",
       "alter_ego": "KAL-ELT"
     },
@@ -121,10 +121,10 @@
       "alter_ego": "NORRIN RADD"
     },
     {
-      "id": "gZz0Uzx",
-      "superhero": "CARFDDF ",
-      "publisher": "DEFEEEEXVXCV Cx",
-      "alter_ego": "JYFEEEXCVXC "
+      "id": "tl3enNe",
+      "superhero": "ASDSA ",
+      "publisher": "ASDAS ",
+      "alter_ego": "DASDAS "
     }
   ]
 }

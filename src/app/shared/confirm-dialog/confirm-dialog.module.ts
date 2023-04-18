@@ -5,22 +5,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { ConfirmDialogComponent } from './confirm-dialog.component';
 import { TranslocoModule } from '@ngneat/transloco';
 
-
-
-
-
-
-
 @NgModule({
-  declarations: [
-    ConfirmDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatDialogModule,
-    TranslocoModule
-  ],
+  declarations: [ConfirmDialogComponent],
+  imports: [CommonModule, MatButtonModule, MatDialogModule, TranslocoModule],
   entryComponents: [ConfirmDialogComponent],
 })
-export class ConfirmDialogModule { }
+export class ConfirmDialogModule {}
