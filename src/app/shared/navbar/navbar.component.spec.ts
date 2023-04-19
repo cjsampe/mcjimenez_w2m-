@@ -2,10 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 
-
 import { NavbarComponent } from './navbar.component';
 import { TranslocoModule } from '@ngneat/transloco';
-
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
@@ -14,18 +12,16 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports:[
-        TranslocoModule, MatToolbarModule, MatButtonModule
-      ],
+      imports: [TranslocoModule, MatToolbarModule, MatButtonModule],
       declarations: [NavbarComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    compiled= fixture.nativeElement;
+    compiled = fixture.nativeElement;
   });
-  
+
   //create component
   it('should create', () => {
     expect(component).toBeTruthy();

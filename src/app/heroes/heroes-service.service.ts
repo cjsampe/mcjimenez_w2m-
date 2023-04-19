@@ -21,9 +21,11 @@ export class HeroesServiceService {
         if (filter === '') {
           return heroes;
         } else {
-          return heroes.filter((e: Heroe) => {
+          return heroes.filter((heroeSearch: Heroe) => {
             return (
-              e.superhero!.toLowerCase().indexOf(filter.toLowerCase()) > -1
+              heroeSearch.superhero
+                .toLowerCase()
+                .indexOf(filter.toLowerCase()) > -1
             );
           });
         }
@@ -32,7 +34,7 @@ export class HeroesServiceService {
   }
 
   getHeroeById(id: string) {
-    return this.http.get<HeroeModel[]>(`${this.url}heroes/${id}`);
+    return this.http.get<HeroeModel>(`${this.url}heroes/${id}`);
   }
 
   updateHeroe(heroe: HeroeModel) {

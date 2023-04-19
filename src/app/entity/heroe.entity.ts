@@ -1,13 +1,13 @@
 export class HeroeModel {
-  id?: string = '';
-  superhero?: string = '';
-  publisher?: string = '';
-  alter_ego?: string = '';
+  id = '';
+  superhero = '';
+  publisher = '';
+  alter_ego = '';
 }
 
 export interface Heroe {
-  id?: string;
-  superhero?: string;
-  publisher?: string;
-  alter_ego?: string;
+  id: string;
+  superhero: string;
+  publisher: string;
+  alter_ego: string;
 }

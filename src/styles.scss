@@ -1,27 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; width: 100%; }
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    //padding-bottom:3em;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-// input[type='id']:disabled {
-//   background: #99ddf1 !important;
-// }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-
-.main-container{
+.main-container {
   margin-top: 2em;
   margin-right: 2rem;
   margin-left: 2rem;
   position: center;
-  
-  ;
 }
 
-.img-logo{
+.img-logo {
   width: 100px;
   position: center;
 }
@@ -29,4 +24,3 @@ body {
 .upper {
   text-transform: uppercase !important;
 }
-

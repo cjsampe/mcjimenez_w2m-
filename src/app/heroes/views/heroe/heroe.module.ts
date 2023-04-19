@@ -11,7 +11,7 @@ import { HeroeComponent } from './heroe.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HeroesRoutingModule } from '../../heroes-routing.module';
-import { UppercaseDirective } from 'src/app/uppercase.directive';
+import { UppercaseDirective } from 'src/app/shared/directive/uppercase.directive';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
