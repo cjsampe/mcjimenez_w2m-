@@ -12,13 +12,13 @@ import { Observable } from 'rxjs';
 })
 export class HeroeComponent implements OnInit {
   heroe: HeroeModel = new HeroeModel();
-  f!: FormGroup;
+  formHeroe: FormGroup;
 
   //loading
   loading: boolean;
 
   constructor(
-    private fb: FormBuilder,
+    private formBuilder: FormBuilder,
     private heroesService: HeroesServiceService,
     private router: Router,
     private route: ActivatedRoute
@@ -27,33 +27,31 @@ export class HeroeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loading = true;
     this.createForm();
 
     const id = this.route.snapshot.paramMap.get('id') || '';
 
     this.heroesService.getHeroeById(id).subscribe((resp: any) => {
       this.heroe = resp;
-      this.heroe.id = id;
       this.loading = false;
       this.loadData();
     });
   }
 
   get superheroNoValid() {
-    return this.f.get('superhero');
+    return this.formHeroe.get('superhero');
   }
 
   get publisherNoValid() {
-    return this.f.get('publisher');
+    return this.formHeroe.get('publisher');
   }
 
   get alterNoValid() {
-    return this.f.get('alter_ego');
+    return this.formHeroe.get('alter_ego');
   }
 
   createForm() {
-    this.f = this.fb.group({
+    this.formHeroe = this.formBuilder.group({
       id: [''],
       superhero: ['', [Validators.required, Validators.minLength(3)]],
       publisher: ['', [Validators.required, Validators.minLength(3)]],
@@ -62,15 +60,15 @@ export class HeroeComponent implements OnInit {
   }
 
   loadData() {
-    this.f.patchValue(this.heroe);
+    this.formHeroe.patchValue(this.heroe);
   }
 
-  save(f: FormGroup) {
-    if (this.f.invalid) {
+  save() {
+    if (this.formHeroe.invalid) {
       return;
     }
 
-    this.heroe = this.f.value;
+    this.heroe = this.formHeroe.value;
 
     this.loading = true;
     let call: Observable<HeroeModel>;
@@ -81,11 +79,9 @@ export class HeroeComponent implements OnInit {
       call = this.heroesService.createHeroe(this.heroe);
     }
 
-    call.subscribe((resp) => {
-      resp = this.heroe;
+    call.subscribe(() => {
       this.loading = false;
+      this.router.navigateByUrl('/heroes');
     });
-
-    this.router.navigateByUrl('/heroes');
   }
 }
