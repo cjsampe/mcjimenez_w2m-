@@ -31,7 +31,7 @@ export class HeroeComponent implements OnInit {
 
     const id = this.route.snapshot.paramMap.get('id') || '';
 
-    this.heroesService.getHeroeById(id).subscribe((resp: any) => {
+    this.heroesService.getHeroeById(id).subscribe((resp: HeroeModel) => {
       this.heroe = resp;
       this.loading = false;
       this.loadData();

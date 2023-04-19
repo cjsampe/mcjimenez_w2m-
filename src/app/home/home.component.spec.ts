@@ -10,24 +10,23 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports:[TranslocoModule],
+      imports: [TranslocoModule],
       declarations: [HomeComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    compiled= fixture.nativeElement;
+    compiled = fixture.nativeElement;
   });
 
-    //create component
+  //create component
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-    //snapshot
+  //snapshot
   it('must be equal to snapshot', () => {
     expect(compiled).toMatchSnapshot();
   });
-
 });

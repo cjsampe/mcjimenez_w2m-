@@ -23,7 +23,9 @@ export class HeroesServiceService {
         } else {
           return heroes.filter((heroeSearch: Heroe) => {
             return (
-              heroeSearch.superhero!.toLowerCase().indexOf(filter.toLowerCase()) > -1
+              heroeSearch.superhero
+                .toLowerCase()
+                .indexOf(filter.toLowerCase()) > -1
             );
           });
         }

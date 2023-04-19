@@ -73,7 +73,7 @@ export class HeroesComponent implements OnInit {
 
   deleteHeroe(heroe: HeroeModel) {
     this.loading = true;
-    this.heroesService.deleteHeroe(heroe.id!).subscribe();
+    this.heroesService.deleteHeroe(heroe.id).subscribe();
     this.searchHeroes('');
     this.loading = false;
   }

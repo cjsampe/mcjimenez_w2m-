@@ -8,7 +8,7 @@
     },
     {
       "id": "00002H",
-      "superhero": "SUPERMAN ",
+      "superhero": "SUPERMAN",
       "publisher": "DC COMICS",
       "alter_ego": "KAL-ELT"
     },
@@ -20,7 +20,7 @@
     },
     {
       "id": "00004H",
-      "superhero": "GREEN LANTERN",
+      "superhero": "GREEN LANTERn ",
       "publisher": "DC COMICS",
       "alter_ego": "ALAN SCOTT"
     },
@@ -119,24 +119,6 @@
       "superhero": "SILVER SURFER",
       "publisher": "MARVEL COMICS",
       "alter_ego": "NORRIN RADD"
-    },
-    {
-      "id": "tl3enNe",
-      "superhero": "ASDSA ",
-      "publisher": "ASDAS ",
-      "alter_ego": "DASDAS "
-    },
-    {
-      "id": "9zE1Ajb",
-      "superhero": "CVNc",
-      "publisher": "BCVCv",
-      "alter_ego": "VBCBVc"
-    },
-    {
-      "id": "QrScZ3n",
-      "superhero": "VNBVn",
-      "publisher": "VBNVBn",
-      "alter_ego": "VNVb"
     }
   ]
 }
