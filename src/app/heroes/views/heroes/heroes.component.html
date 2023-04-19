@@ -1,0 +1,85 @@
+<div class="main-container">
+  <h1>{{ "HEROES.LIST_HEROES" | transloco }}</h1>
+  <hr />
+
+  <div class="example-button-row">
+    <div>
+      <button routerLink="/heroes/heroes/new" mat-raised-button color="primary">
+        {{ "HEROES.ADD_HEROES" | transloco }}
+      </button>
+    </div>
+    <div>
+      <mat-form-field class="search">
+        <mat-label>{{ "HEROES.SEARCH_HEROES" | transloco }}</mat-label>
+        <div [formGroup]="myGroup">
+          <input
+            formControlName="search"
+            type="text"
+            matInput
+            placeholder="{{ 'HEROES.SEARCH_HEROES_NAME' | transloco }}"
+          />
+        </div>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          {{ "HEROES.ID" | transloco }}
+        </th>
+        <td mat-cell [ngClass]="'upper'" *matCellDef="let row">{{ row.id }}</td>
+      </ng-container>
+
+      <!-- SuperHeroe Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          {{ "HEROES.NAME" | transloco }}
+        </th>
+        <td mat-cell *matCellDef="let row">{{ row.superhero }}</td>
+      </ng-container>
+
+      <!-- Edit Column -->
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          {{ "HEROES.EDIT" | transloco }}
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <button
+            class="icons"
+            mat-icon-button
+            color="primary"
+            [routerLink]="['/heroes/heroes', row.id]"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <!-- Delete Column -->
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          {{ "HEROES.DELETE" | transloco }}
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button color="primary" (click)="openDialog(row)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator
+      [pageSizeOptions]="[5, 10, 25]"
+      aria-label="Select page of users"
+    ></mat-paginator>
+  </div>
+</div>

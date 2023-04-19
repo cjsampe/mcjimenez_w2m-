@@ -1,0 +1,78 @@
+<div class="main-container">
+  <h1>{{ "HEROE.TITLE_HEROE" | transloco }}</h1>
+  <hr />
+  <div class="example-button-row">
+    <button routerLink="/heroes/heroes" mat-raised-button color="primary">
+      {{ "HEROE.RETURN" | transloco }}
+    </button>
+  </div>
+
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
+  <form class="example-form" [formGroup]="formHeroe" (ngSubmit)="save()">
+    <small>{{ "HEROE.TEXT_ID" | transloco }} </small>
+    <mat-form-field class="example-full-width">
+      <mat-label>{{ "HEROES.ID" | transloco }}</mat-label>
+      <input
+        [ngClass]="'upper'"
+        matInput
+        placeholder=""
+        type="id"
+        formControlName="id"
+        readonly
+      />
+    </mat-form-field>
+
+    <small
+      class="red"
+      *ngIf="superheroNoValid?.invalid && superheroNoValid?.touched"
+      >{{ "HEROE.TEXT_WARNING" | transloco }}
+    </small>
+    <mat-form-field class="example-full-width">
+      <mat-label>{{ "HEROES.NAME" | transloco }}</mat-label>
+      <input
+        appUppercase
+        matInput
+        placeholder="{{ 'HEROE.NAME_TEXT' | transloco }}"
+        type="text"
+        formControlName="superhero"
+      />
+    </mat-form-field>
+
+    <small
+      class="red"
+      *ngIf="publisherNoValid?.invalid && publisherNoValid?.touched"
+      >{{ "HEROE.TEXT_WARNING" | transloco }}
+    </small>
+    <mat-form-field class="example-full-width">
+      <mat-label>{{ "HEROE.PUBLICATION" | transloco }}</mat-label>
+      <input
+        appUppercase
+        matInput
+        placeholder="{{ 'HEROE.PUBLICATION_TEXT' | transloco }}"
+        type="text"
+        formControlName="publisher"
+      />
+    </mat-form-field>
+
+    <small class="red" *ngIf="alterNoValid?.invalid && alterNoValid?.touched"
+      >{{ "HEROE.TEXT_WARNING" | transloco }}
+    </small>
+    <mat-form-field class="example-full-width">
+      <mat-label>{{ "HEROE.ALTER_EGO" | transloco }}</mat-label>
+      <input
+        appUppercase
+        matInput
+        placeholder="{{ 'HEROE.ALTER_EGO_TEXT' | transloco }}"
+        type="text"
+        formControlName="alter_ego"
+      />
+    </mat-form-field>
+
+    <div class="example-button-row">
+      <button mat-raised-button color="primary" type="submit">
+        {{ "HEROE.SAVE" | transloco }}
+      </button>
+    </div>
+  </form>
+</div>

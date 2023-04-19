@@ -1,0 +1,39 @@
+{
+    "NAVBAR": {
+        "TITLE_NAVBAR": "Héroes de Comic",
+        "HOME": "Inicio"
+      },
+    "HOME": {
+        "TEXT": "Prueba técnica de Carmen Jiménez Sampériz"
+      }, 
+    "HEROES": {
+        "HEROES": "Héroes",
+        "LIST_HEROES": "Listado de Héroes",
+        "ADD_HEROES": "Añadir Héroe",
+        "SEARCH_HEROES": "Buscar",
+        "SEARCH_HEROES_NAME": "Por nombre",
+        "ID": "ID",
+        "NAME": "Nombre",
+        "EDIT": "Editar",
+        "DELETE": "Borrar",
+        "YES": "Sí",
+        "NOT": "No",
+        "DELETE.MESSAGE": "¿Está seguro de querer borrar este héroe?"
+      },
+    "HEROE": {
+        "TITLE_HEROE": "Añade tu nuevo heroe",
+        "RETURN": "Volver al listado",
+        "TEXT_ID": "Campo autogenerado, no editable",
+        "TEXT_WARNING": "Campo obligatorio. Ingrese al menos 3 letras",
+        "NAME_TEXT": "Escribe un nombre",
+        "PUBLICATION": "Publicación",
+        "PUBLICATION_TEXT": "Escribe una publicación",
+        "ALTER_EGO": "Alter ego",
+        "ALTER_EGO_TEXT": "Escribe un alter ego",
+        "SAVE": "Guardar"
+      },
+    "LANG": {
+        "EN": "Inglés",
+        "ES": "Español"
+      }
+}

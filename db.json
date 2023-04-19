@@ -1,0 +1,124 @@
+{
+  "heroes": [
+    {
+      "id": "00001H",
+      "superhero": "BATMAN",
+      "publisher": "CXVXC",
+      "alter_ego": "VBMV"
+    },
+    {
+      "id": "00002H",
+      "superhero": "SUPERMAN",
+      "publisher": "DC COMICS",
+      "alter_ego": "KAL-ELT"
+    },
+    {
+      "id": "00003H",
+      "superhero": "FLASHESS",
+      "publisher": "DC COMICS",
+      "alter_ego": "JAY GARRICK"
+    },
+    {
+      "id": "00004H",
+      "superhero": "GREEN LANTERn ",
+      "publisher": "DC COMICS",
+      "alter_ego": "ALAN SCOTT"
+    },
+    {
+      "id": "00005H",
+      "superhero": "GREEN ARROWW",
+      "publisher": "DC COMICS",
+      "alter_ego": "OLIVER QUEEN"
+    },
+    {
+      "id": "00006H",
+      "superhero": "WONDER WOMAN",
+      "publisher": "DC COMICS",
+      "alter_ego": "PRINCESS DIANA"
+    },
+    {
+      "id": "00007H",
+      "superhero": "MARTIAN MANHUNTER",
+      "publisher": "DC COMICS",
+      "alter_ego": "J'ONN J'ONZZ"
+    },
+    {
+      "id": "00008H",
+      "superhero": "ROBIN/NIGHTWING",
+      "publisher": "DC COMICS",
+      "alter_ego": "DICK GRAYSON"
+    },
+    {
+      "id": "00009H",
+      "superhero": "BLUE BEETLE",
+      "publisher": "DC COMICS",
+      "alter_ego": "DAN GARRET"
+    },
+    {
+      "id": "00010H",
+      "superhero": "BLACK CANARY",
+      "publisher": "DC COMICS",
+      "alter_ego": "DINAH DRAKE"
+    },
+    {
+      "id": "00011H",
+      "superhero": "SPIDER MAN",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "PETER PARKER"
+    },
+    {
+      "id": "00012H",
+      "superhero": "CAPTAIN AMERICA",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "STEVE ROGERS"
+    },
+    {
+      "id": "00013H",
+      "superhero": "IRON MAN",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "TONY STARK"
+    },
+    {
+      "id": "00014H",
+      "superhero": "THOR",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "THOR ODINSON"
+    },
+    {
+      "id": "00015H",
+      "superhero": "HULK",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "BRUCE BANNER"
+    },
+    {
+      "id": "00016H",
+      "superhero": "WOLVERINE",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "JAMES HOWLETT"
+    },
+    {
+      "id": "00017H",
+      "superhero": "DAREDEVIL",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "MATTHEW MICHAEL MURDOCK"
+    },
+    {
+      "id": "00018H",
+      "superhero": "HAWKEYE",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "CLINTON FRANCIS BARTON"
+    },
+    {
+      "id": "00019H",
+      "superhero": "CYCLOPS",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "SCOTT SUMMERS"
+    },
+    {
+      "id": "00020H",
+      "superhero": "SILVER SURFER",
+      "publisher": "MARVEL COMICS",
+      "alter_ego": "NORRIN RADD"
+    }
+  ]
+}

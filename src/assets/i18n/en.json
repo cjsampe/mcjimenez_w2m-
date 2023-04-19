@@ -1,0 +1,39 @@
+{
+    "NAVBAR": {
+        "TITLE_NAVBAR": "Comic Book Heroes",
+        "HOME": "Home"
+      },
+    "HOME": {
+        "TEXT": "Technical test by Carmen Jiménez Sampériz"
+      },  
+    "HEROES": {
+        "HEROES": "Heroes",
+        "LIST_HEROES": "List of Heroes",
+        "ADD_HEROES": "Add Hero",
+        "SEARCH_HEROES": "Search",
+        "SEARCH_HEROES_NAME": "By name",
+        "ID": "ID",
+        "NAME": "Name",
+        "EDIT": "Edit",
+        "DELETE": "Delete",
+        "YES": "Yes",
+        "NOT": "No",
+        "DELETE.MESSAGE": "Are you sure you want to erase this hero?"
+      },
+    "HEROE": {
+        "TITLE_HEROE": "Add your new hero",
+        "RETURN": "Back to the list",
+        "TEXT_ID": "Auto-generated field, not editable",
+        "TEXT_WARNING": "Required field. Enter at least 3 letters",
+        "NAME_TEXT": "Write a name",
+        "PUBLICATION": "Publication",
+        "PUBLICATION_TEXT": "Write a publication",
+        "ALTER_EGO": "Alter ego",
+        "ALTER_EGO_TEXT": "Write an alter ego",
+        "SAVE": "Save"
+      },
+      "LANG": {
+        "EN": "English",
+        "ES": "Spanish"
+      }  
+}

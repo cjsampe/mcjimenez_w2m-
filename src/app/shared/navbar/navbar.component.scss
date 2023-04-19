@@ -1,0 +1,43 @@
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  width: 100% !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+  margin-top: 2em !important;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  .item {
+    margin: 1em;
+  }
+}
+
+.button {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+mat-toolbar {
+  height: 100px !important;
+  width: 100% !important;
+
+  position: center;
+}
+
+@media (max-width:599px) {
+  .mat-toolbar {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
