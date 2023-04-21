@@ -8,12 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
-import { HeroesRoutingModule } from './heroes/heroes-routing.module';
-import { ViewsModule } from './heroes/views.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { ConfirmDialogModule } from './shared/confirm-dialog/confirm-dialog.module';
 import { HomeModule } from './home/home.module';
+import { HeroeModule } from './heroes/views/heroe/heroe.module';
+import { HeroesModule } from './heroes/views/heroes/heroes.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,12 +24,12 @@ import { HomeModule } from './home/home.module';
     NavbarModule,
     HttpClientModule,
     TranslocoRootModule,
-    HeroesRoutingModule,
-    ViewsModule,
     MatButtonModule,
     MatDialogModule,
     ConfirmDialogModule,
     HomeModule,
+    HeroeModule,
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent],

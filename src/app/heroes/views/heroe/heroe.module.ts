@@ -10,9 +10,11 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { HeroeComponent } from './heroe.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { HeroesRoutingModule } from '../../heroes-routing.module';
+
 import { UppercaseDirective } from 'src/app/shared/directive/uppercase.directive';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HeroeRoutingModule } from './heroe-routing.module';
+
 
 @NgModule({
   declarations: [HeroeComponent, UppercaseDirective],
@@ -24,8 +26,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatButtonModule,
     ReactiveFormsModule,
     TranslocoModule,
-    HeroesRoutingModule,
     MatProgressSpinnerModule,
+    HeroeRoutingModule
   ],
 })
 export class HeroeModule {}
