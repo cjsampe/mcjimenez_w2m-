@@ -34,6 +34,8 @@
       },
       "LANG": {
         "EN": "English",
-        "ES": "Spanish"
+        "ES": "Spanish",
+        "LANGUAGE": "Language"
+
       }  
 }

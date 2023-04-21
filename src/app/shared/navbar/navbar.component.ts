@@ -16,8 +16,8 @@ export class NavbarComponent {
   selectedValue: string;
 
   lenguages: Lenguages[] = [
-    { value: 'en', viewValue: 'English' },
-    { value: 'es', viewValue: 'Spanish' },
+    { value: 'en', viewValue: '{{ "LANG.EN" | transloco }}' },
+    { value: 'es', viewValue: '{{ "LANG.EN" | transloco }}'}
   ];
 
   constructor(private translocoService: TranslocoService) {
