@@ -24,8 +24,6 @@ export class HeroesComponent implements OnInit {
   time: number; //imput search - time since the user stops typing until the start of the search
   myGroup: FormGroup;
 
-  //loading
-  loading: boolean;
 
   //table
   displayedColumns: string[] = ['id', 'name', 'edit', 'delete'];
@@ -40,7 +38,6 @@ export class HeroesComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.loading = true;
     this.searchHeroes('');
 
     this.myGroup = new FormGroup({
@@ -67,15 +64,12 @@ export class HeroesComponent implements OnInit {
       //Modified to wait for a response from the request and to be able to collect it, otherwise empty.
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
-      this.loading = false;
     });
   }
 
   deleteHeroe(heroe: HeroeModel) {
-    this.loading = true;
     this.heroesService.deleteHeroe(heroe.id).subscribe();
     this.searchHeroes('');
-    this.loading = false;
   }
 
   openDialog(heroe: HeroeModel) {

@@ -4,7 +4,7 @@
 
   <div class="example-button-row">
     <div>
-      <button routerLink="/heroes/heroes/new" mat-raised-button color="primary">
+      <button routerLink="/heroe/new" mat-raised-button color="primary">
         {{ "HEROES.ADD_HEROES" | transloco }}
       </button>
     </div>
@@ -24,7 +24,6 @@
     </div>
   </div>
 
-  <mat-spinner *ngIf="loading"></mat-spinner>
 
   <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
@@ -54,7 +53,7 @@
             class="icons"
             mat-icon-button
             color="primary"
-            [routerLink]="['/heroes/heroes', row.id]"
+            [routerLink]="['/heroe/', row.id]"
           >
             <mat-icon>edit</mat-icon>
           </button>

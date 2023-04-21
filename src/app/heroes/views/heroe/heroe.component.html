@@ -2,16 +2,17 @@
   <h1>{{ "HEROE.TITLE_HEROE" | transloco }}</h1>
   <hr />
   <div class="example-button-row">
-    <button routerLink="/heroes/heroes" mat-raised-button color="primary">
+    <button routerLink="/heroes" mat-raised-button color="primary">
       {{ "HEROE.RETURN" | transloco }}
     </button>
   </div>
 
-  <mat-spinner *ngIf="loading"></mat-spinner>
+  <!-- <mat-spinner *ngIf="loading"></mat-spinner> -->
+  
 
   <form class="example-form" [formGroup]="formHeroe" (ngSubmit)="save()">
     <small>{{ "HEROE.TEXT_ID" | transloco }} </small>
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="example-full-width" disabled>
       <mat-label>{{ "HEROES.ID" | transloco }}</mat-label>
       <input
         [ngClass]="'upper'"

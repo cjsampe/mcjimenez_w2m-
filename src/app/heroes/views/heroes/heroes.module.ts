@@ -16,8 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { HeroesRoutingModule } from '../../heroes-routing.module';
+
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HeroesRoutingModule } from './heroes-routing.module';
 
 @NgModule({
   declarations: [HeroesComponent],
@@ -34,9 +35,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     TranslocoModule,
     MatTableModule,
     ReactiveFormsModule,
-    HeroesRoutingModule,
     MatDialogModule,
     MatProgressSpinnerModule,
+    HeroesRoutingModule
   ],
 })
 export class HeroesModule {}
