@@ -26,8 +26,24 @@
           >
             {{ lenguage.viewValue }}
           </mat-option>
+
+          
+<!-- 
+
+            <div  [ngModel]="selectLang"
+             (ngModelChange)="selectLanguage($event)">
+              <mat-option (onclick)="selectLanguage('en')" [value]="'es'">
+                {{ "LANG.EN" | transloco }}
+              </mat-option>
+              <mat-option  (onclick)="selectLanguage('es')" [value]="'es'">
+                {{ "LANG.ES" | transloco }}
+              </mat-option>
+            </div>   -->
+        
         </mat-select>
       </mat-form-field>
     </div>
+   
   </div>
 </mat-toolbar>
+

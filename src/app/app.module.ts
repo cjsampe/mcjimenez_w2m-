@@ -14,9 +14,15 @@ import { ConfirmDialogModule } from './shared/confirm-dialog/confirm-dialog.modu
 import { HomeModule } from './home/home.module';
 import { HeroeModule } from './heroes/views/heroe/heroe.module';
 import { HeroesModule } from './heroes/views/heroes/heroes.module';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
+
+
+import { HTTP_INTERCEPTORS} from '@angular/common/http';
+import { SpinnerInterceptorService } from './shared/spinner/spinner-interceptor.service';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SpinnerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,9 +35,12 @@ import { HeroesModule } from './heroes/views/heroes/heroes.module';
     ConfirmDialogModule,
     HomeModule,
     HeroeModule,
-    HeroesModule
+    HeroesModule,
+    MatProgressSpinnerModule
+    
+
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptorService, multi: true }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -14,8 +14,6 @@ export class HeroeComponent implements OnInit {
   heroe: HeroeModel = new HeroeModel();
   formHeroe: FormGroup;
 
-  //loading
-  loading: boolean;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -33,7 +31,6 @@ export class HeroeComponent implements OnInit {
 
     this.heroesService.getHeroeById(id).subscribe((resp: HeroeModel) => {
       this.heroe = resp;
-      this.loading = false;
       this.loadData();
     });
   }
@@ -70,7 +67,7 @@ export class HeroeComponent implements OnInit {
 
     this.heroe = this.formHeroe.value;
 
-    this.loading = true;
+
     let call: Observable<HeroeModel>;
 
     if (this.heroe.id) {
@@ -80,7 +77,6 @@ export class HeroeComponent implements OnInit {
     }
 
     call.subscribe(() => {
-      this.loading = false;
       this.router.navigateByUrl('/heroes');
     });
   }

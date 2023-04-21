@@ -12,7 +12,7 @@ import { HeroeComponent } from './heroe.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UppercaseDirective } from 'src/app/shared/directive/uppercase.directive';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 import { HeroeRoutingModule } from './heroe-routing.module';
 
 
@@ -26,7 +26,7 @@ import { HeroeRoutingModule } from './heroe-routing.module';
     MatButtonModule,
     ReactiveFormsModule,
     TranslocoModule,
-    MatProgressSpinnerModule,
+
     HeroeRoutingModule
   ],
 })

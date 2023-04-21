@@ -7,11 +7,12 @@
     </button>
   </div>
 
-  <mat-spinner *ngIf="loading"></mat-spinner>
+  <!-- <mat-spinner *ngIf="loading"></mat-spinner> -->
+  
 
   <form class="example-form" [formGroup]="formHeroe" (ngSubmit)="save()">
     <small>{{ "HEROE.TEXT_ID" | transloco }} </small>
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="example-full-width" disabled>
       <mat-label>{{ "HEROES.ID" | transloco }}</mat-label>
       <input
         [ngClass]="'upper'"
