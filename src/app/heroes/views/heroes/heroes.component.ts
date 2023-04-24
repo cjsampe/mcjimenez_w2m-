@@ -24,7 +24,6 @@ export class HeroesComponent implements OnInit {
   time: number; //imput search - time since the user stops typing until the start of the search
   myGroup: FormGroup;
 
-
   //table
   displayedColumns: string[] = ['id', 'name', 'edit', 'delete'];
   dataSource: MatTableDataSource<Heroe>;

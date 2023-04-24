@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarComponent must be equal to snapshot 1`] = `
+<div
+  id="root1"
+>
+  <mat-toolbar
+    class="mat-toolbar mat-primary mat-toolbar-single-row"
+    color="primary"
+  >
+    <div
+      class="menu"
+    >
+      <div>
+        <span>
+          <strong>
+             es.NAVBAR.TITLE_NAVBAR 
+          </strong>
+        </span>
+        <button
+          class="mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base"
+          mat-button=""
+          routerlink="/home"
+        >
+          <span
+            class="mat-mdc-button-persistent-ripple mdc-button__ripple"
+          />
+          <span
+            class="mdc-button__label"
+          >
+             es.NAVBAR.HOME 
+          </span>
+          <span
+            class="mat-mdc-focus-indicator"
+          />
+          <span
+            class="mat-ripple mat-mdc-button-ripple"
+            matripple=""
+          />
+          <span
+            class="mat-mdc-button-touch-target"
+          />
+        </button>
+        <button
+          class="mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base"
+          mat-button=""
+          routerlink="/heroes"
+        >
+          <span
+            class="mat-mdc-button-persistent-ripple mdc-button__ripple"
+          />
+          <span
+            class="mdc-button__label"
+          >
+             es.HEROES.HEROES 
+          </span>
+          <span
+            class="mat-mdc-focus-indicator"
+          />
+          <span
+            class="mat-ripple mat-mdc-button-ripple"
+            matripple=""
+          />
+          <span
+            class="mat-mdc-button-touch-target"
+          />
+        </button>
+      </div>
+      <div />
+      <div>
+        <mat-form-field
+          appearance="fill"
+          class="select"
+        >
+          <mat-label>
+             es.LANG.LANGUAGE
+          </mat-label>
+          <mat-select
+            name="food"
+          >
+            <mat-option>
+               English/Inglés 
+            </mat-option>
+            <mat-option>
+               Spanish/Español 
+            </mat-option>
+            
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+`;

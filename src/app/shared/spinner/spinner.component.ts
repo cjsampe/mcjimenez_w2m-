@@ -7,17 +7,13 @@ import { SpinnerHandlerService } from './spinner-handler.service';
   templateUrl: './spinner.component.html',
 })
 export class SpinnerComponent {
-
   spinnerActive = true;
 
-  constructor(
-    public spinnerHandler: SpinnerHandlerService
-  ) {
+  constructor(public spinnerHandler: SpinnerHandlerService) {
     this.spinnerHandler.showSpinner.subscribe(this.showSpinner.bind(this));
   }
 
   showSpinner = (state: boolean): void => {
     this.spinnerActive = state;
   };
-
 }

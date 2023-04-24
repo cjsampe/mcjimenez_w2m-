@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 const routes: Routes = [
   {
     path: 'home',
@@ -11,14 +10,18 @@ const routes: Routes = [
   {
     path: 'heroes',
     loadChildren: () =>
-      import('src/app/heroes/views/heroes/heroes.module').then((m) => m.HeroesModule),
+      import('src/app/heroes/views/heroes/heroes.module').then(
+        (m) => m.HeroesModule
+      ),
   },
   {
     path: 'heroe/:id',
     loadChildren: () =>
-      import('src/app/heroes/views/heroe/heroe.module').then((m) => m.HeroeModule),
+      import('src/app/heroes/views/heroe/heroe.module').then(
+        (m) => m.HeroeModule
+      ),
   },
-  { path: `**`, redirectTo: `home` }
+  { path: `**`, redirectTo: `home` },
 ];
 
 @NgModule({
