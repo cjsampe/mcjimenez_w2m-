@@ -13,6 +13,7 @@ body {
 .menu {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between !important;
   margin-top: 2em !important;
   margin-left: 2em;
@@ -38,6 +39,16 @@ mat-toolbar {
 @media (max-width:599px) {
   .mat-toolbar {
     width: 100% !important;
+    height: 130px !important;
     margin: 0 !important;
   }
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    margin-top: 2em !important;
+    margin-left: 2em;
+    margin-right: 2em;
+}
 }
