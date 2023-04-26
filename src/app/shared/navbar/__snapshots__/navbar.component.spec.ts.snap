@@ -76,13 +76,13 @@ exports[`NavbarComponent must be equal to snapshot 1`] = `
              es.LANG.LANGUAGE
           </mat-label>
           <mat-select
-            name="food"
+            name="tranlations"
           >
             <mat-option>
-               English/Inglés 
+               es.LANG.EN 
             </mat-option>
             <mat-option>
-               Spanish/Español 
+               es.LANG.ES 
             </mat-option>
             
           </mat-select>
