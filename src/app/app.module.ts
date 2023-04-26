@@ -17,10 +17,12 @@ import { HeroesModule } from './heroes/views/heroes/heroes.module';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { SpinnerInterceptorService } from './shared/spinner/spinner-interceptor.service';
-import { SpinnerComponent } from './shared/spinner/spinner.component';
+// import { SpinnerInterceptorService } from './shared/spinner/spinner-interceptor.service';
+// import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { LoaderInterceptor } from './shared/loader/loader.interceptor';
+import { LoaderComponent } from './shared/loader/loader.component';
 @NgModule({
-  declarations: [AppComponent, SpinnerComponent],
+  declarations: [AppComponent, LoaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,11 +37,12 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     HeroeModule,
     HeroesModule,
     MatProgressSpinnerModule,
+
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: SpinnerInterceptorService,
+      useClass: LoaderInterceptor,
       multi: true,
     },
   ],
