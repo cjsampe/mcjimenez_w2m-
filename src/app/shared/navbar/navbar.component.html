@@ -18,13 +18,13 @@
         <mat-select
           [ngModel]="selectLang"
           (ngModelChange)="selectLanguage($event)"
-          name="food"
+          name="tranlations"
         >
           <mat-option
             *ngFor="let lenguage of lenguages"
             [value]="lenguage.value"
           >
-            {{ lenguage.viewValue }}
+           {{ lenguage.viewValue | transloco }}
           </mat-option>
         </mat-select>
       </mat-form-field>

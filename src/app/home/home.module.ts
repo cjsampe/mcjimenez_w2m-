@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { TranslocoModule } from '@ngneat/transloco';
-import { HomeRoutingModule } from './home-routing.module';
+
 
 @NgModule({
   declarations: [HomeComponent],
-  imports: [CommonModule, TranslocoModule, HomeRoutingModule],
+  imports: [CommonModule, TranslocoModule],
   exports: [],
 })
 export class HomeModule {}

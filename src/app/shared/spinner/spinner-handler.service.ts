@@ -6,9 +6,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SpinnerHandlerService {
   public numberOfRequests = 0;
-  public showSpinner: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
+  private showSpinner: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
     false
   );
+  public SpinnerObservable = this.showSpinner.asObservable();
 
   handleRequest = (state = 'minus'): void => {
     this.numberOfRequests =

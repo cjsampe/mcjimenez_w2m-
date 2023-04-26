@@ -12,7 +12,9 @@ import { SpinnerHandlerService } from './spinner-handler.service';
 
 @Injectable()
 export class SpinnerInterceptorService implements HttpInterceptor {
+  
   constructor(public spinnerHandler: SpinnerHandlerService) {}
+
 
   intercept(
     request: HttpRequest<unknown>,
