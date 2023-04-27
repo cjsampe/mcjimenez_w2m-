@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HeroeComponent } from './heroe.component'; 
+import { HeroeComponent } from './heroe.component';
 
 const route: Routes = [
   {

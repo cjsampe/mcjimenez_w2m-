@@ -18,32 +18,16 @@
         <mat-select
           [ngModel]="selectLang"
           (ngModelChange)="selectLanguage($event)"
-          name="food"
+          name="tranlations"
         >
           <mat-option
             *ngFor="let lenguage of lenguages"
             [value]="lenguage.value"
           >
-            {{ lenguage.viewValue }}
+           {{ lenguage.viewValue | transloco }}
           </mat-option>
-
-          
-<!-- 
-
-            <div  [ngModel]="selectLang"
-             (ngModelChange)="selectLanguage($event)">
-              <mat-option (onclick)="selectLanguage('en')" [value]="'es'">
-                {{ "LANG.EN" | transloco }}
-              </mat-option>
-              <mat-option  (onclick)="selectLanguage('es')" [value]="'es'">
-                {{ "LANG.ES" | transloco }}
-              </mat-option>
-            </div>   -->
-        
         </mat-select>
       </mat-form-field>
     </div>
-   
   </div>
 </mat-toolbar>
-

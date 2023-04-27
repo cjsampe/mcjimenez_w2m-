@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  app:
+    container_name: mcjimenez_w2m
+    image: mcjimenez_w2m
+    restart: always
+    ports:
+      - "80:80"
+  json-server:
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 3000 -w db.json
+    ports:
+    - "3000:3000"
+    volumes:
+      - ./data:/data
+    restart: always

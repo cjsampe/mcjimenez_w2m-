@@ -16,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HeroesRoutingModule } from './heroes-routing.module';
 
@@ -37,7 +36,7 @@ import { HeroesRoutingModule } from './heroes-routing.module';
     ReactiveFormsModule,
     MatDialogModule,
     MatProgressSpinnerModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
   ],
 })
 export class HeroesModule {}
