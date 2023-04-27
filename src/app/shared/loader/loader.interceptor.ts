@@ -5,7 +5,7 @@ import {
     HttpInterceptor,
   } from '@angular/common/http';
   import { Observable } from 'rxjs';
-  import { LoaderService } from './loader.serrvice'; 
+  import { LoaderService } from './loader.service'; 
   import { finalize } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
   

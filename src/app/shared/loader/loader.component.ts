@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import { LoaderService } from './loader.serrvice'; 
+import { LoaderService } from './loader.service'; 
 import { Subject } from 'rxjs';
 
 @Component({

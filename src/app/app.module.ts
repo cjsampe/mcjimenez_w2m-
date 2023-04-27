@@ -17,8 +17,6 @@ import { HeroesModule } from './heroes/views/heroes/heroes.module';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-// import { SpinnerInterceptorService } from './shared/spinner/spinner-interceptor.service';
-// import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { LoaderInterceptor } from './shared/loader/loader.interceptor';
 import { LoaderComponent } from './shared/loader/loader.component';
 @NgModule({

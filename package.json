@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "api-mock": "json-server --watch db.json",
+    "api-mock": "json-server --delay 2000 --watch db.json",
     "lint": "ng lint"
   },
   "private": true,
