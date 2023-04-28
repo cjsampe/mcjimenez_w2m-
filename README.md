@@ -13,3 +13,11 @@ Run `ng run start` for a dev server. Navigate to `http://localhost:4200/`. The a
 ## Development api-mock 🚀
 
 Run `ng run api-mock for a api-mock. Resources http://localhost:3000/heroes. Home http://localhost:3000
+
+## Create app image APP with Dockerfile 🚀
+
+docker build –t mcjimenez_w2m .
+
+## Pull up the docker compose 🚀
+
+docker compose up
